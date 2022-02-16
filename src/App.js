@@ -1,14 +1,12 @@
-import "./App.css";
+import "./Styles/App.css";
 import { Routes, Route } from "react-router-dom";
-import Home from "./components/Home";
+import Landing from "./components/Landing";
 import Nav from "./components/Nav";
 function App() {
   return (
     <div className="App">
+      <Landing />
       <Nav />
-      <Routes>
-        <Route path="/" element={<Home />} />
-      </Routes>
     </div>
   );
 }

@@ -1,6 +1,12 @@
 import React from "react";
 
 const Nav = () => {
-  return <div>hello Nav</div>;
+  return (
+    <nav>
+      <ul>
+        <li>Projects</li>
+      </ul>
+    </nav>
+  );
 };
 export default Nav;
