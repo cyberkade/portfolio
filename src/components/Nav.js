@@ -4,7 +4,11 @@ const Nav = () => {
   return (
     <nav>
       <ul>
-        <li>Projects</li>
+        <li>Home</li>
+        <li>About</li>
+        <li>Portfolio</li>
+        <li>Resume</li>
+        <li>Contact</li>
       </ul>
     </nav>
   );

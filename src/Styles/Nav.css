@@ -1,0 +1,18 @@
+nav {
+  background-color: #151515;
+  width: 100vw;
+  padding: 1.8rem 0;
+  border-bottom: 2px solid purple;
+}
+
+ul {
+  margin-left: 5%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+  width: 50%;
+}
+
+li {
+  cursor: pointer;
+}
