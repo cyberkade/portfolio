@@ -23,7 +23,7 @@
 }
 
 .name {
-  color: purple;
+  color: #5d25b6;
 }
 
 .view-work-btn {
@@ -32,7 +32,7 @@
   align-items: center;
   width: 30%;
   background-color: rgba(255, 255, 255, 0);
-  border: 2px solid #fff;
+  border: 2px solid #fbfffb;
   box-sizing: inherit;
   cursor: pointer;
   font-size: 2rem;
@@ -43,12 +43,12 @@
 
 .view-work-btn:hover {
   background-color: lightgray;
-  color: purple;
-  border: 2px solid purple;
+  color: #5d25b6;
+  border: 2px solid #5d25b6;
 }
 
 .view-work-btn:hover .arrow-svg {
   transition: all 0.5s;
   transform: rotate(90deg);
-  stroke: purple;
+  stroke: #5d25b6;
 }

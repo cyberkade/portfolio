@@ -1,8 +1,26 @@
-import React from "react";
-
+import "../Styles/Nav.css";
+import { useState, useEffect } from "react";
 const Nav = () => {
+  const [navClass, setNavClass] = useState("");
+
+  const stickNav = () => {
+    if (window !== undefined) {
+      let windowHeight = window.scrollY;
+      console.log(windowHeight);
+      windowHeight > 757 ? setNavClass("sticky") : setNavClass("");
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", stickNav);
+
+    return () => {
+      window.removeEventListener("scroll", stickNav);
+    };
+  }, []);
+
   return (
-    <nav>
+    <nav className={navClass}>
       <ul>
         <li>Home</li>
         <li>About</li>

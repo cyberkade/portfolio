@@ -1,3 +1,41 @@
-.about-container {
+.about-cont {
+  height: auto;
+  background-color: #363434;
+  box-sizing: border-box;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 10px;
+  width: 100%;
+}
+
+img {
+  height: auto;
+  width: 100px;
+}
+
+.info-cont {
+  width: 75%;
   height: 100vh;
+  margin: 0 auto;
+}
+
+h2 {
+  font-size: 2.4rem;
+  padding: 1rem;
+}
+
+.skills {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+}
+
+.skill-box {
+  width: 30%;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: space-between;
 }

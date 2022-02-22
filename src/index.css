@@ -142,10 +142,5 @@ body {
   font-family: "Sriracha", cursive;
   font-size: 1.6rem;
   max-width: 100%;
-  background-color: lightgray;
+  background-color: #363434;
 }
-
-@import url("./Styles/App.css");
-@import url("./Styles/Landing.css");
-@import url("./Styles/Nav.css");
-@import url("./Styles/About.css");
