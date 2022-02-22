@@ -11,11 +11,12 @@
   flex-flow: row;
   justify-content: center;
   align-items: center;
-  background-color: #1f1e1e;
+  background-color: #1c1d20;
 }
 
 .info-div {
   font-size: 5rem;
+  line-height: 1.25;
   display: flex;
   flex-flow: column;
   /* justify-content: space-evenly; */
@@ -23,7 +24,7 @@
 }
 
 .name {
-  color: #5d25b6;
+  color: #bb86fc;
 }
 
 .view-work-btn {
@@ -42,13 +43,74 @@
 }
 
 .view-work-btn:hover {
-  background-color: lightgray;
-  color: #5d25b6;
-  border: 2px solid #5d25b6;
+  color: #bb86fc;
+  border: 2px solid #bb86fc;
 }
 
 .view-work-btn:hover .arrow-svg {
   transition: all 0.5s;
   transform: rotate(90deg);
-  stroke: #5d25b6;
+  stroke: #bb86fc;
+}
+
+/* Cool infinite background scrolling animation.
+ * Twitter: @kootoopas
+ */
+
+/* Exo thin font from Google. */
+@import url(https://fonts.googleapis.com/css?family=Exo:100);
+
+/* Animations */
+@-webkit-keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 86px 86px;
+  }
+}
+@-moz-keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 86px 86px;
+  }
+}
+@-o-keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 86px 86px;
+  }
+}
+@keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 86px 86px;
+  }
+}
+
+@-webkit-keyframes bg-scrolling {
+  0% {
+    background-position: 86px 86px;
+  }
+}
+@-moz-keyframes bg-scrolling {
+  0% {
+    background-position: 86px 86px;
+  }
+}
+@-o-keyframes bg-scrolling {
+  0% {
+    background-position: 86px 86px;
+  }
+}
+@keyframes bg-scrolling {
+  0% {
+    background-position: 86px 86px;
+  }
+}
+
+/* Main styles */
+.landing-cont {
+  font: 400 16px/1.5 exo, ubuntu, "segoe ui", helvetica, arial, sans-serif;
+  /* Background data (Original source: https://subtlepatterns.com/grid-me/) */
+  background: url("/src/images/repeated-square-dark.png") repeat 0 0;
+  background-color: black;
+  -webkit-animation: bg-scrolling-reverse linear 1.82s infinite; /* Safari 4+ */
+  -moz-animation: bg-scrolling-reverse linear 1.82s infinite; /* Fx 5+ */
+  -o-animation: bg-scrolling-reverse linear 1.82s infinite; /* Opera 12+ */
+  animation: bg-scrolling-reverse linear 1.82s infinite; /* IE 10+ */
 }

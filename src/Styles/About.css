@@ -1,11 +1,21 @@
 .about-cont {
   height: auto;
-  background-color: #363434;
+  background-color: #1f1e1e;
+  /* background-color: #2b2c2e; */
   box-sizing: border-box;
   margin: 0 auto;
   max-width: 1200px;
   padding: 0 10px;
   width: 100%;
+}
+
+.code-snippet {
+  width: 100%;
+}
+
+h2 {
+  font-size: 2.4rem;
+  padding: 1rem;
 }
 
 img {
@@ -14,28 +24,30 @@ img {
 }
 
 .info-cont {
-  width: 75%;
-  height: 100vh;
+  width: 85%;
+  height: auto;
   margin: 0 auto;
 }
 
-h2 {
-  font-size: 2.4rem;
-  padding: 1rem;
-}
-
-.skills {
+.me-cont {
   width: 100%;
   height: auto;
   display: flex;
   flex-flow: row nowrap;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
-.skill-box {
+.me-box {
   width: 30%;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
   justify-content: space-between;
+}
+
+.me-text {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 1.8rem;
+  line-height: 1.4;
 }

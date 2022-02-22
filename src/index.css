@@ -142,5 +142,7 @@ body {
   font-family: "Sriracha", cursive;
   font-size: 1.6rem;
   max-width: 100%;
-  background-color: #363434;
+  background-color: #1c1d20;
+
+  /* background-color: #2b2c2e; */
 }

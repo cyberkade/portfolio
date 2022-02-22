@@ -1,52 +1,41 @@
 import "../Styles/About.css";
+import bulb from "../images/bulb.png";
+import heart from "../images/heart.png";
+import quick from "../images/fast-time.png";
 
 const About = () => {
-  let Kade;
-
-  if (Kade === "passionate coding geek" && Kade === "compassionate human") {
-    return "Catch me jammin' out and exploring the latest technologies in my free time.";
-  } else {
-    return "You got the wrong Kade :(";
-  }
-
   return (
     <section id="about">
       <div className="title-cont">About</div>
       <div className="header-bar" />
+
       <div className="info-cont">
-        <div className="skills">
-          <div className="skill-box">
-            <img
-              alt="burning heart"
-              src="https://cdn-icons-png.flaticon.com/512/177/177036.png"
-            />
+        <div className="me-cont">
+          <div className="me-box">
+            <img alt="burning heart" src={heart} />
             <h2>Passionate</h2>
-            <p>
-              Passionate coding geek && compassionate person. Catch me jammin'
-              out and exploring the latest technologies in my free time.
+            <p className="me-text">
+              Passionate coding geek, but more importantly, just a compassionate
+              person. Catch me jammin' out and exploring the latest technologies
+              in my free time!
             </p>
           </div>
-          <div className="skill-box">
-            <img
-              alt="brain lightbulb"
-              src="https://cdn-icons-png.flaticon.com/512/3618/3618051.png"
-            />
+          <div className="me-box">
+            <img alt="brain lightbulb" src={bulb} />
             <h2>Creative Mind</h2>
-            <p>
-              I've never shyed away from manifesting creative solutions to solve
-              complex problems.
+            <p className="me-text">
+              I've never shied away from architecting creative solutions for
+              complex problems. My experience with music engineering and arts &
+              crafts translates to my work in many ways
             </p>
           </div>
-          <div className="skill-box">
-            <img
-              alt="burning heart"
-              src="https://cdn-icons-png.flaticon.com/512/177/177036.png"
-            />
-            <h2>Passionate</h2>
-            <p>
-              Not only am I passionate about coding, but about learning in
-              general. Find me exploring the latest cool technologies in my free
-              time
+          <div className="me-box">
+            <img alt="burning heart" src={quick} />
+            <h2>Quick Learner</h2>
+            <p className="me-text">
+              I'm confident in my ability to pick up on new concepts quick. I'll
+              adapt to your tech stack with optimism and eagerness. Give me an
+              opportunity to learn and I'll take it!
             </p>
           </div>
         </div>
