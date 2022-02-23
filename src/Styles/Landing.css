@@ -105,7 +105,7 @@
 
 /* Main styles */
 .landing-cont {
-  font: 400 16px/1.5 exo, ubuntu, "segoe ui", helvetica, arial, sans-serif;
+  font-family: exo, ubuntu, "segoe ui", helvetica, arial, sans-serif;
   /* Background data (Original source: https://subtlepatterns.com/grid-me/) */
   background: url("/src/images/repeated-square-dark.png") repeat 0 0;
   background-color: black;

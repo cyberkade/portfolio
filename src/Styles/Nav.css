@@ -16,6 +16,12 @@ ul {
 
 li {
   cursor: pointer;
+  font-weight: bold;
+}
+
+li:hover {
+  /* font-weight: normal; */
+  color: #257cb6;
 }
 
 .sticky {

@@ -133,16 +133,18 @@ table {
 * {
   max-width: 100%;
   color: #fbfffb;
-  font-family: "Sriracha", cursive;
+  /* font-family: "Sriracha", cursive; */
+  font-family: exo, ubuntu, "segoe ui", helvetica, arial, sans-serif;
 }
 html {
   font-size: 62.5%;
 }
 body {
-  font-family: "Sriracha", cursive;
+  /* font-family: "Sriracha", cursive; */
+  font-family: exo, ubuntu, "segoe ui", helvetica, arial, sans-serif;
   font-size: 1.6rem;
   max-width: 100%;
   background-color: #1c1d20;
-
+  line-height: 1.25;
   /* background-color: #2b2c2e; */
 }

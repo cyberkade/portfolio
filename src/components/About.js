@@ -24,8 +24,8 @@ const About = () => {
             <img alt="brain lightbulb" src={bulb} />
             <h2>Creative Mind</h2>
             <p className="me-text">
-              I've never shied away from architecting creative solutions for
-              complex problems. My experience with music engineering and arts &
+              I've never shied away from formulating creative solutions for
+              complex problems. My experience in music engineering and arts &
               crafts translates to my work in many ways
             </p>
           </div>
@@ -39,7 +39,19 @@ const About = () => {
             </p>
           </div>
         </div>
-        <div className="about-text"></div>
+
+        <div className="about-text">
+          <div className="bio-wrap">
+            <div className="me-img">.</div>
+            <div className="bio">
+              lorem ipsum dolor sit ametlorem ipsum dolor sit ametlorem ipsum
+              dolor sit ametlorem ipsum dolor sit ametlorem ipsum dolor sit
+              ametlorem ipsum dolor sit ametlorem ipsum dolor sit ametlorem
+            </div>
+          </div>
+
+          <div className=" pac-man skills"></div>
+        </div>
       </div>
     </section>
   );

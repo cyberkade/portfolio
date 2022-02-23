@@ -6,8 +6,7 @@ const Nav = () => {
   const stickNav = () => {
     if (window !== undefined) {
       let windowHeight = window.scrollY;
-      console.log(windowHeight);
-      windowHeight > 757 ? setNavClass("sticky") : setNavClass("");
+      windowHeight > 997 ? setNavClass("sticky") : setNavClass("");
     }
   };
 
