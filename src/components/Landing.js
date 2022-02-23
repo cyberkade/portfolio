@@ -1,6 +1,5 @@
 import "../Styles/Landing.css";
-
-const Landing = () => {
+const Landing = ({ viewAbout }) => {
   return (
     <div className="landing-cont">
       <div className="info-div">
@@ -9,7 +8,7 @@ const Landing = () => {
           <br />
           I'm a Full Stack Developer.
         </h1>
-        <button className="view-work-btn">
+        <button onClick={() => viewAbout()} className="view-work-btn">
           View My Work
           <svg
             className="arrow-svg"

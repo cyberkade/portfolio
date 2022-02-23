@@ -1,12 +1,12 @@
 import "../Styles/Nav.css";
 import { useState, useEffect } from "react";
-const Nav = () => {
+const Nav = ({ viewAbout }) => {
   const [navClass, setNavClass] = useState("");
 
   const stickNav = () => {
     if (window !== undefined) {
       let windowHeight = window.scrollY;
-      windowHeight > 997 ? setNavClass("sticky") : setNavClass("");
+      windowHeight >= 995 ? setNavClass("sticky") : setNavClass("");
     }
   };
 
@@ -21,8 +21,10 @@ const Nav = () => {
   return (
     <nav className={navClass}>
       <ul>
-        <li>Home</li>
-        <li>About</li>
+        <li onClick={() => window.location.replace("/")} k>
+          Home
+        </li>
+        <li onClick={() => viewAbout()}> About</li>
         <li>Portfolio</li>
         <li>Resume</li>
         <li>Contact</li>
