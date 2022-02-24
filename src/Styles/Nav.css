@@ -3,7 +3,11 @@ nav {
   width: 100vw;
   padding: 1.8rem 0;
   border-bottom: 2px solid #257cb6;
-  display: absolute;
+  position: sticky;
+  top: 0;
+  transform-origin: top center;
+  z-index: 99;
+  animation: rotateMenu 500ms ease-in-out forwards;
 }
 
 ul {
@@ -24,15 +28,14 @@ li:hover {
   color: #257cb6;
 }
 
+/* 
 .sticky {
   animation: rotateMenu 500ms ease-in-out forwards;
   transform-origin: top center;
-  position: fixed;
+  position: sticky;
   width: 100%;
-  bottom: inherit;
-  left: 0;
   top: 0;
-}
+} */
 
 @keyframes rotateMenu {
   0% {

@@ -1,12 +1,12 @@
 import "../Styles/Nav.css";
-import { useState, useEffect } from "react";
-const Nav = ({ viewAbout }) => {
-  const [navClass, setNavClass] = useState("");
-
+import { useEffect } from "react";
+const Nav = ({ viewAbout, navClass, setNavClass }) => {
   const stickNav = () => {
     if (window !== undefined) {
       let windowHeight = window.scrollY;
-      windowHeight >= 995 ? setNavClass("sticky") : setNavClass("");
+      if (windowHeight >= 995) {
+        setNavClass("sticky");
+      }
     }
   };
 

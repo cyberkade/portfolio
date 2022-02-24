@@ -2,11 +2,22 @@ import "../Styles/About.css";
 import bulb from "../images/bulb.png";
 import heart from "../images/heart.png";
 import quick from "../images/fast-time.png";
+import Draggable from "react-draggable";
 
 const About = () => {
+  // onStart = () => {
+  //   setDrags({activeDrags: ++this.state.activeDrags});
+  // };
+
+  // onStop = () => {
+  //   setDrags({activeDrags: --this.state.activeDrags});
+  // };
+
+  // const dragHandlers = {onStart: onStart, onStop: onStop};
+
   return (
     <section id="about">
-      <div className="title-cont">About</div>
+      <p className="title">About</p>
       <div className="header-bar" />
 
       <div className="info-cont">
@@ -42,7 +53,7 @@ const About = () => {
 
         <div className="about-text">
           <div className="bio-wrap">
-            <div className="me-img">.</div>
+            <div className="me-img" />
             <div className="bio">
               lorem ipsum dolor sit ametlorem ipsum dolor sit ametlorem ipsum
               dolor sit ametlorem ipsum dolor sit ametlorem ipsum dolor sit
@@ -50,7 +61,65 @@ const About = () => {
             </div>
           </div>
 
-          <div className=" pac-man skills"></div>
+          <div className="skills">
+            <Draggable bounds="parent">
+              <h2 className="skill 1">JavaScript</h2>
+            </Draggable>
+            <Draggable bounds="parent">
+              <h2 className="skill 2">CSS</h2>
+            </Draggable>
+            <Draggable bounds="parent">
+              <h2 className="skill 3">HTML</h2>
+            </Draggable>
+            <Draggable bounds="parent">
+              <h2 className="skill 4">Reactjs</h2>
+            </Draggable>
+            <Draggable bounds="parent">
+              <h2 className="skill 5">Nodejs</h2>
+            </Draggable>
+            <Draggable bounds="parent">
+              <h2 className="skill 6">PostgreSQL</h2>
+            </Draggable>
+            <Draggable bounds="parent">
+              <h2 className="skill 7">Redux</h2>
+            </Draggable>
+            <Draggable bounds="parent">
+              <h2 className="skill 8">Jest</h2>
+            </Draggable>
+            <Draggable bounds="parent">
+              <h2 className="skill 9">Cypress</h2>
+            </Draggable>
+            <Draggable bounds="parent">
+              <h2 className="skill 10">Context API</h2>
+            </Draggable>
+            <Draggable bounds="parent">
+              <h2 className="skill">Axios</h2>
+            </Draggable>
+            <Draggable bounds="parent">
+              <h2 className="skill">Express</h2>
+            </Draggable>
+            <Draggable bounds="parent">
+              <h2 className="skill">SQL</h2>
+            </Draggable>
+            <Draggable bounds="parent">
+              <h2 className="skill">Git CLI</h2>
+            </Draggable>
+            <Draggable bounds="parent">
+              <h2 className="skill">Agile Management</h2>
+            </Draggable>
+            <Draggable bounds="parent">
+              <h2 className="skill">Algorithms</h2>
+            </Draggable>
+            <Draggable bounds="parent">
+              <h2 className="skill">Architecture</h2>
+            </Draggable>
+            <Draggable bounds="parent">
+              <h2 className="skill">Debugging</h2>
+            </Draggable>
+            <Draggable bounds="parent">
+              <h2 className="skill">Deployment</h2>
+            </Draggable>
+          </div>
         </div>
       </div>
     </section>

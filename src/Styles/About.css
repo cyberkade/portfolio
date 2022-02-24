@@ -59,7 +59,7 @@ img {
   width: 100%;
   height: auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .bio-wrap {
@@ -86,6 +86,19 @@ img {
     rgba(255, 255, 255, 0.07) 0px 16px 32px,
     rgba(255, 255, 255, 0.07) 0px 32px 64px;
   border-radius: 50%;
+}
+
+.skill {
+  width: auto;
+  display: inline-block;
+  cursor: grab;
+  background-color: #257cb6;
+  border-radius: 25px;
+}
+
+.skills {
+  width: 50%;
+  position: relative;
 }
 
 /* 
