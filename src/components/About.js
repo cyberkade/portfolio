@@ -63,34 +63,34 @@ const About = () => {
 
           <div className="skills">
             <Draggable bounds="parent">
-              <h2 className="skill 1">JavaScript</h2>
+              <h2 className="skill">JavaScript</h2>
             </Draggable>
             <Draggable bounds="parent">
-              <h2 className="skill 2">CSS</h2>
+              <h2 className="skill">CSS</h2>
             </Draggable>
             <Draggable bounds="parent">
-              <h2 className="skill 3">HTML</h2>
+              <h2 className="skill">HTML</h2>
             </Draggable>
             <Draggable bounds="parent">
-              <h2 className="skill 4">Reactjs</h2>
+              <h2 className="skill">Reactjs</h2>
             </Draggable>
             <Draggable bounds="parent">
-              <h2 className="skill 5">Nodejs</h2>
+              <h2 className="skill">Nodejs</h2>
             </Draggable>
             <Draggable bounds="parent">
-              <h2 className="skill 6">PostgreSQL</h2>
+              <h2 className="skill">PostgreSQL</h2>
             </Draggable>
             <Draggable bounds="parent">
-              <h2 className="skill 7">Redux</h2>
+              <h2 className="skill">Redux</h2>
             </Draggable>
             <Draggable bounds="parent">
-              <h2 className="skill 8">Jest</h2>
+              <h2 className="skill">Jest</h2>
             </Draggable>
             <Draggable bounds="parent">
-              <h2 className="skill 9">Cypress</h2>
+              <h2 className="skill">Cypress</h2>
             </Draggable>
             <Draggable bounds="parent">
-              <h2 className="skill 10">Context API</h2>
+              <h2 className="skill">Context API</h2>
             </Draggable>
             <Draggable bounds="parent">
               <h2 className="skill">Axios</h2>

@@ -89,6 +89,7 @@ img {
 }
 
 .skill {
+  /* font-size: 1.6rem; */
   width: auto;
   display: inline-block;
   cursor: grab;
@@ -114,3 +115,9 @@ img {
   border-bottom-left-radius: 60px;
   border-bottom-right-radius: 60px;
 } */
+
+@media screen and (min-width: 1400px) {
+  .skill {
+    transform: scale(0.5);
+  }
+}
