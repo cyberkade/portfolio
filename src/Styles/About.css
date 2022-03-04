@@ -91,6 +91,7 @@ img {
 .skill {
   /* font-size: 1.6rem; */
   width: auto;
+  height: 3rem;
   display: inline-block;
   cursor: grab;
   background-color: #257cb6;
@@ -100,6 +101,38 @@ img {
 .skills {
   width: 50%;
   position: relative;
+  padding: 1.5rem;
+  display: flex;
+  flex-flow: row wrap;
+  align-content: space-evenly;
+  justify-content: space-between;
+}
+
+.skill:nth-child(even) {
+  /* align-self: center; */
+  position: relative;
+  top: 5rem;
+}
+.skill:nth-child(odd) {
+  /* align-self: center; */
+
+  position: relative;
+  top: -2rem;
+}
+
+.skill:nth-child(16) {
+  position: relative;
+  top: 0px;
+}
+
+.skill:nth-child(18) {
+  position: relative;
+  top: 0px;
+}
+
+.skill:nth-child(19) {
+  position: relative;
+  top: -50px;
 }
 
 /* 
@@ -116,8 +149,10 @@ img {
   border-bottom-right-radius: 60px;
 } */
 
-@media screen and (min-width: 1400px) {
+@media screen and (max-width: 1800px) {
   .skill {
-    transform: scale(0.5);
+    font-size: 1.6rem;
+
+    /* transform: scale(0.5); */
   }
 }
