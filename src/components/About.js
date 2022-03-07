@@ -51,7 +51,7 @@ const About = () => {
           </div>
         </div>
 
-        <div className="about-text">
+        <div className="about-cont">
           <div className="bio-wrap">
             <div className="me-img" />
             <div className="bio">
@@ -62,63 +62,40 @@ const About = () => {
           </div>
 
           <div className="skills">
-            <Draggable bounds="parent">
+            <div className="skill-wrap">
               <h2 className="skill">JavaScript</h2>
-            </Draggable>
-            <Draggable bounds="parent">
+
               <h2 className="skill">CSS</h2>
-            </Draggable>
-            <Draggable bounds="parent">
+
               <h2 className="skill">HTML</h2>
-            </Draggable>
-            <Draggable bounds="parent">
+
               <h2 className="skill">Reactjs</h2>
-            </Draggable>
-            <Draggable bounds="parent">
+
               <h2 className="skill">Nodejs</h2>
-            </Draggable>
-            <Draggable bounds="parent">
+
               <h2 className="skill">PostgreSQL</h2>
-            </Draggable>
-            <Draggable bounds="parent">
+
               <h2 className="skill">Redux</h2>
-            </Draggable>
-            <Draggable bounds="parent">
+
               <h2 className="skill">Jest</h2>
-            </Draggable>
-            <Draggable bounds="parent">
+            </div>
+
+            <div className="skill-wrap">
               <h2 className="skill">Cypress</h2>
-            </Draggable>
-            <Draggable bounds="parent">
+
               <h2 className="skill">Context API</h2>
-            </Draggable>
-            <Draggable bounds="parent">
+
               <h2 className="skill">Axios</h2>
-            </Draggable>
-            <Draggable bounds="parent">
+
               <h2 className="skill">Express</h2>
-            </Draggable>
-            <Draggable bounds="parent">
+
               <h2 className="skill">SQL</h2>
-            </Draggable>
-            <Draggable bounds="parent">
+
               <h2 className="skill">Git CLI</h2>
-            </Draggable>
-            <Draggable bounds="parent">
+
               <h2 className="skill">Agile Management</h2>
-            </Draggable>
-            <Draggable bounds="parent">
               <h2 className="skill">Algorithms</h2>
-            </Draggable>
-            <Draggable bounds="parent">
-              <h2 className="skill">Architecture</h2>
-            </Draggable>
-            <Draggable bounds="parent">
-              <h2 className="skill">Debugging</h2>
-            </Draggable>
-            <Draggable bounds="parent">
-              <h2 className="skill">Deployment</h2>
-            </Draggable>
+            </div>
           </div>
         </div>
       </div>
