@@ -56,8 +56,7 @@ const About = () => {
             <div className="me-img" />
             <div className="bio">
               lorem ipsum dolor sit ametlorem ipsum dolor sit ametlorem ipsum
-              dolor sit ametlorem ipsum dolor sit ametlorem ipsum dolor sit
-              ametlorem ipsum dolor sit ametlorem ipsum dolor sit ametlorem
+              dolor sit ametpsum dolor sit ametlorem
             </div>
           </div>
 
@@ -78,6 +77,9 @@ const About = () => {
               <h2 className="skill">Redux</h2>
 
               <h2 className="skill">Jest</h2>
+              <h2 className="skill">Algorithms</h2>
+
+              <h2 className="skill">Deployment</h2>
             </div>
 
             <div className="skill-wrap">
@@ -94,7 +96,6 @@ const About = () => {
               <h2 className="skill">Git CLI</h2>
 
               <h2 className="skill">Agile Management</h2>
-              <h2 className="skill">Algorithms</h2>
             </div>
           </div>
         </div>
