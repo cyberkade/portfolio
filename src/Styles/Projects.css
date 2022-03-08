@@ -2,3 +2,21 @@
   background-color: #2b2c2e;
   /* box-sizing: border-box; */
 }
+
+.projects-cont {
+  width: 85%;
+  height: auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.card {
+  height: 22rem;
+  width: 44rem;
+  background: center / cover no-repeat url("../images/SpotPlayer2.png");
+}
+
+.card:hover {
+  background: rgba(31, 30, 30, 0.8);
+}

@@ -7,18 +7,18 @@ import { useState } from "react";
 
 function App() {
   const [navClass, setNavClass] = useState("a");
-  const viewAbout = () => {
-    window.location.replace("/#about");
+  const viewSection = (directory) => {
+    window.location.replace(`/#${directory}`);
     setNavClass("sticky");
   };
 
   return (
     <div className="App">
-      <Landing viewAbout={viewAbout} />
+      <Landing viewSection={viewSection} />
       <Nav
         navClass={navClass}
         setNavClass={setNavClass}
-        viewAbout={viewAbout}
+        viewSection={viewSection}
       />
       <About />
       <Projects />

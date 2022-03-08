@@ -7,7 +7,14 @@ const Porfolio = () => {
     <section className="projects-section" id="projects">
       <p className="title">Projects</p>
       <div className="header-bar" />
-      <div className="projects-cont"></div>
+      <div className="projects-cont">
+        <div className="card"></div>
+        <div className="card"></div>
+        <div className="card"></div>
+        <div className="card"></div>
+        <div className="card"></div>
+        <div className="card"></div>
+      </div>
     </section>
   );
 };

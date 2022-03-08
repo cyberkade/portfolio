@@ -63,38 +63,24 @@ const About = () => {
           <div className="skills">
             <div className="skill-wrap">
               <h2 className="skill">JavaScript</h2>
-
               <h2 className="skill">CSS</h2>
-
               <h2 className="skill">HTML</h2>
-
               <h2 className="skill">Reactjs</h2>
-
               <h2 className="skill">Nodejs</h2>
-
               <h2 className="skill">PostgreSQL</h2>
-
               <h2 className="skill">Redux</h2>
-
               <h2 className="skill">Jest</h2>
               <h2 className="skill">Algorithms</h2>
-
               <h2 className="skill">Deployment</h2>
             </div>
 
             <div className="skill-wrap">
               <h2 className="skill">Cypress</h2>
-
               <h2 className="skill">Context API</h2>
-
               <h2 className="skill">Axios</h2>
-
               <h2 className="skill">Express</h2>
-
               <h2 className="skill">SQL</h2>
-
               <h2 className="skill">Git CLI</h2>
-
               <h2 className="skill">Agile Management</h2>
             </div>
           </div>
