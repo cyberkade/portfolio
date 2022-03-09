@@ -21,7 +21,7 @@ const Nav = ({ viewSection, navClass, setNavClass }) => {
   return (
     <nav className={navClass}>
       <ul>
-        <li onClick={() => viewSection("/")} k>
+        <li onClick={() => viewSection("")} k>
           Home
         </li>
         <li onClick={() => viewSection("about")}> About</li>
