@@ -30,7 +30,7 @@ const Contact = () => {
       <p className="title">Contact</p>
       <div className="header-bar contact" />
       <p style={{ fontWeight: "bold", color: "#257cb6" }}>
-        Questions? Interested in working together?
+        Questions? Interested in working together? Don't be shy!
       </p>
       <form className="contact-form" ref={form} onSubmit={sendEmail}>
         <input placeholder="Name" type="text" name="username" />
