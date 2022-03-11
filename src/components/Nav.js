@@ -26,8 +26,8 @@ const Nav = ({ viewSection, navClass, setNavClass }) => {
         </li>
         <li onClick={() => viewSection("about")}> About</li>
         <li onClick={() => viewSection("projects")}>Projects</li>
-        <li onClick={() => viewSection("resume")}>Resume</li>
         <li onClick={() => viewSection("contact")}>Contact</li>
+        <li onClick={() => viewSection("resume")}>Resume</li>
       </ul>
     </nav>
   );

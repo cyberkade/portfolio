@@ -2,7 +2,7 @@ import "../Styles/Footer.css";
 import { useState } from "react";
 import Chevron from "../images/chevronBlue.png";
 import LinkedIn from "../images/linkedin-24.png";
-import GitHub from "../images/github.png";
+import GitHub from "../images/github-32.png";
 
 const Footer = ({ viewSection }) => {
   return (

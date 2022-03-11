@@ -10,13 +10,11 @@ const Porfolio = () => {
         <p className="title">Projects</p>
         <div className="header-bar" />
         {/* <div className="sort-wrap">
-        <button className="sort active">
-          All
-        </button>
-        <button className="sort">React-JS</button>
-        <button className="sort">Node.js</button>
-        <button className="sort">JavaScript</button>
-      </div> */}
+          <button className="sort active">All</button>
+          <button className="sort">React-JS</button>
+          <button className="sort">Node.js</button>
+          <button className="sort">JavaScript</button>
+        </div> */}
         <div className="projects-cont">
           <div className="card">
             <div className="projects-text">
