@@ -1,4 +1,129 @@
-.projects-section {
+button.learn-more {
+  border-radius: 5%;
+  background-color: #2b2c2e;
+  color: #ffa260;
+  border: 2px solid;
+  padding: 1rem 2rem;
+  font-size: 1.6rem;
+  transition: color 0.25s, border-color 0.25s, box-shadow 0.25s, transform 0.25s;
+  opacity: 0;
+  font-weight: 600;
+}
+
+button.learn-more:hover {
+  color: #257cb6;
+  font-weight: bold;
+  border-color: #257cb6;
+  box-shadow: 0 0.5em 0.5em -0.4em #257cb6;
+  cursor: pointer;
+  font-weight: 600;
+  display: inline-block;
+  transform: translateY(-0.15em);
+  /* background-color: #151515; */
+}
+
+button.sort {
+  border-radius: 5%;
+  background-color: #2b2c2e;
+  opacity: 0.8;
+  color: #ffa260;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1.6rem;
+  transition: color 0.25s, border-color 0.25s, box-shadow 0.25s, transform 0.25s;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+button.sort:focus {
+  background-color: white;
+}
+div.card {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 22rem;
+  width: 44rem;
+  background: center / cover no-repeat url("../images/spotiCarousel.png");
+  transition: background 600ms;
+}
+
+div.card.ud {
+  background: center / cover no-repeat url("../images/ud2.png");
+  /* transition: background 600ms ease-in-out; */
+}
+
+div.card:hover {
+  background: rgba(21, 21, 21, 0.3);
+  /* transition: background 600ms ease-in-out; */
+  animation: fade 500ms forwards;
+}
+
+div.card:hover button.learn-more {
+  transition: all 600ms;
+  opacity: 1;
+  animation: slide-up 300ms ease-in-out forwards;
+}
+
+div.card:hover .projects-text {
+  transition: all 600ms;
+  opacity: 1;
+  animation: slide-down 300ms ease-in-out forwards;
+  /* transform-origin: top center; */
+}
+
+div.sort-wrap {
+  width: 50%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  padding-bottom: 2rem;
+}
+
+.projects-cont {
+  width: 75%;
+  height: auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.projects-text {
+  opacity: 0;
+  text-align: center;
+}
+
+.project-title {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+.project-languages {
+  color: #ffa260;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+section.projects-section {
   background-color: #2b2c2e;
   /* box-sizing: border-box; */
+}
+
+@keyframes slide-up {
+  0% {
+    transform: translateY(40px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes slide-down {
+  0% {
+    transform: translateY(-40px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
 }

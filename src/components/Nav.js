@@ -1,6 +1,6 @@
 import "../Styles/Nav.css";
 import { useEffect } from "react";
-const Nav = ({ viewAbout, navClass, setNavClass }) => {
+const Nav = ({ viewSection, navClass, setNavClass }) => {
   const stickNav = () => {
     if (window !== undefined) {
       let windowHeight = window.scrollY;
@@ -21,13 +21,13 @@ const Nav = ({ viewAbout, navClass, setNavClass }) => {
   return (
     <nav className={navClass}>
       <ul>
-        <li onClick={() => window.location.replace("/")} k>
+        <li onClick={() => viewSection("")} k>
           Home
         </li>
-        <li onClick={() => viewAbout()}> About</li>
-        <li>Portfolio</li>
-        <li>Resume</li>
-        <li>Contact</li>
+        <li onClick={() => viewSection("about")}> About</li>
+        <li onClick={() => viewSection("projects")}>Projects</li>
+        <li onClick={() => viewSection("resume")}>Resume</li>
+        <li onClick={() => viewSection("contact")}>Contact</li>
       </ul>
     </nav>
   );
