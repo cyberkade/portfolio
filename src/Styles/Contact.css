@@ -1,3 +1,15 @@
+.contact {
+  margin: 1.5rem 0 4rem 0;
+}
+
+.error-message {
+  color: rgb(185, 64, 64);
+  font-weight: bold;
+  margin-left: 0.5rem;
+  display: inline-block;
+  /* transition: all 500ms linear; */
+}
+
 form {
   width: 25%;
   margin-top: 4rem;
@@ -5,8 +17,35 @@ form {
   flex-flow: column nowrap;
 }
 
-.contact {
-  margin: 1.5rem 0 4rem 0;
+.submit-wrap {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  margin-top: 0.5rem;
+}
+
+.submit-wrap input:disabled {
+  margin-top: 0.5rem;
+  cursor: not-allowed;
+  font-weight: normal;
+  opacity: 0.8;
+}
+
+.submit-wrap input:disabled:hover {
+  cursor: not-allowed;
+  background-color: #1e242c;
+}
+
+.submit-wrap input {
+  width: 25%;
+  font-weight: bold;
+  margin-top: 0.5rem;
+  transition: background-color 300ms linear;
+}
+
+.submit-wrap input:hover {
+  background-color: #257cb6;
+  cursor: pointer;
 }
 
 ::placeholder {
@@ -36,16 +75,18 @@ input:nth-of-type(3) {
 
 .loader {
   display: flex;
+  flex-flow: row;
   justify-content: center;
   align-items: center;
-  width: 50px;
-  height: 50px;
+  width: 5rem;
+  height: 5rem;
   background: transparent;
-  margin: 30px auto 0 auto;
+  margin: 1% 6.5% 0 0;
   border: solid 2px #424242;
   border-top: solid 2px #1c89ff;
   border-radius: 50%;
   opacity: 0;
+  align-self: flex-end;
 }
 
 .check {
@@ -59,14 +100,14 @@ input:nth-of-type(3) {
   opacity: 0;
 }
 
-.check.span:nth-child(1) {
+.check-one {
   display: block;
   width: 10px;
   height: 2px;
   background-color: #fff;
   transform: rotate(45deg);
 }
-.check.span:nth-child(2) {
+.check-two {
   display: block;
   width: 20px;
   height: 2px;
