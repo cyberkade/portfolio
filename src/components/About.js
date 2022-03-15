@@ -55,8 +55,10 @@ const About = () => {
           <div className="bio-wrap">
             <div className="me-img" />
             <div className="bio">
-              lorem ipsum dolor sit ametlorem ipsum dolor sit ametlorem ipsum
-              dolor sit ametpsum dolor sit ametlorem
+              <p style={{ fontWeight: "bold" }}>Who? What?</p>
+              <br /> I am currently a Front End Developer for Real People
+              Reviews. I have a serious passion for giving back to the world and
+              I live that through my coding.
             </div>
           </div>
 
