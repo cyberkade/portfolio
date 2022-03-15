@@ -2,7 +2,7 @@ import "../Styles/Projects.css";
 import Card from "./Card";
 import React, { useEffect } from "react";
 
-const Porfolio = () => {
+const Porfolio = ({ toggleModal }) => {
   useEffect(() => {}, []);
   return (
     <>
@@ -17,15 +17,41 @@ const Porfolio = () => {
         </div> */}
         <div className="projects-cont">
           <Card
+            toggleModal={toggleModal}
             name={"Spotistats Music Player"}
             languages="React JS / Nodes.js"
             tag=""
           />
-          <Card tag="ud" name="Underdog Devs" languages="React JS / Express" />
-          <Card tag="mov" name="Museum of Vibes" languages="HTML / CSS" />
-          <Card tag="ud" name="Underdog Devs" languages="React JS / Express" />
-          <Card tag="ud" name="Underdog Devs" languages="React JS / Express" />
-          <Card tag="ud" name="Underdog Devs" languages="React JS / Express" />
+          <Card
+            toggleModal={toggleModal}
+            name="Underdog Devs"
+            languages="React JS / Express"
+            tag="ud"
+          />
+          <Card
+            toggleModal={toggleModal}
+            name="Museum of Vibes"
+            languages="HTML / CSS"
+            tag="mov"
+          />
+          <Card
+            toggleModal={toggleModal}
+            name="Underdog Devs"
+            languages="React JS / Express"
+            tag="ud"
+          />
+          <Card
+            toggleModal={toggleModal}
+            name="Underdog Devs"
+            languages="React JS / Express"
+            tag="ud"
+          />
+          <Card
+            toggleModal={toggleModal}
+            name="Underdog Devs"
+            languages="React JS / Express"
+            tag="ud"
+          />
         </div>
       </section>
       <svg

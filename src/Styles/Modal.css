@@ -1,0 +1,120 @@
+a {
+  text-decoration: none;
+}
+
+.carousel-wrap {
+  width: 100%;
+  height: 60%;
+}
+
+.modal-wrap {
+  height: 100vh;
+  position: fixed;
+  width: 100vw;
+  z-index: 100;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.modal-wrap .close {
+  bottom: 25px;
+  color: #bbb;
+  cursor: pointer;
+  font-size: 20pt;
+  font-weight: 800;
+  position: absolute;
+  right: 10px;
+}
+
+.modal-wrap .button {
+  background: #e28b67;
+  border: 0;
+  bottom: 20px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 10pt;
+  font-weight: 600;
+  left: 10px;
+  padding: 11px 30px;
+  pointer-events: none;
+  position: absolute;
+  transition: all 0.5s;
+  /* visibility: hidden; */
+}
+
+/* .modal-wrap.visible {
+    pointer-events: initial;
+} 
+
+.modal-wrap.visible .mask {
+  opacity: 1;
+} */
+
+.modal-wrap .mask {
+  background: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  opacity: 1;
+  transition: opacity 0.3s;
+  width: 100%;
+}
+
+.modal-wrap .modal {
+  align-items: flex-start;
+  background: #fff;
+  box-shadow: 0 0 10px rgb(0 0 0 / 40%);
+  box-sizing: border-box;
+  color: #333;
+  height: 100vh;
+  top: -6vh;
+  position: relative;
+  text-align: left;
+  transform: scale(0.8);
+  transition: all 300ms;
+  /* max-width: 700px; */
+}
+
+.modal-wrap.visible .modal {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.modal-wrap .info-box {
+  border-top: 3px solid #1b242f;
+  box-sizing: border-box;
+  color: #444;
+  padding: 35px 60px 90px 25px;
+  /* padding: 15px 10px 85px 10px; */
+}
+
+.modal-wrap .site-title {
+  font-family: "Raleway-bold";
+  font-size: 22pt;
+  line-height: 30pt;
+  /* font-size: 16pt;
+    line-height: 20pt; */
+}
+
+.modal-wrap .details {
+  font-size: 11pt;
+  line-height: 18pt;
+  margin-top: 15px;
+  /* font-size: 9pt;
+    line-height: 14pt;
+    margin-top: 13px; */
+}
+.modal-wrap .tag {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  color: #c0c0c0;
+  display: block;
+  font-family: "Raleway-bold";
+  font-size: 11pt;
+  /* font-size: 8pt; */
+  font-weight: 300;
+  padding-bottom: 15px;
+}

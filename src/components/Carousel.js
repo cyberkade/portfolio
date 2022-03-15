@@ -1,0 +1,66 @@
+import React, { useEffect, useState } from "react";
+
+function Carousel({ paths }) {
+  const [current, setCurrent] = useState(0);
+  const length = paths.length;
+  console.log(paths);
+  const next = () => {
+    return setCurrent(current === length - 1 ? 0 : current + 1);
+  };
+
+  const prev = () => {
+    return setCurrent(current === 0 ? length - 1 : current - 1);
+  };
+
+  useEffect(() => {
+    const autoScroll = setTimeout(() => {
+      next();
+    }, 20000);
+    return () => clearTimeout(autoScroll);
+    // eslint-disable-next-line
+  }, [current]);
+
+  return (
+    <div className="carousel-container">
+      <div className="carousel-image-container">
+        {paths.map((element, index) => {
+          return (
+            <div
+              key={index}
+              className={index === current ? "slide active" : "slide"}
+            >
+              {index === current && (
+                <div
+                  style={{
+                    background: ` center / contain no-repeat url(${element}) `,
+                  }}
+                  className="top-image-c"
+                  alt="display of app"
+                ></div>
+              )}
+            </div>
+          );
+        })}
+        <div className="btn-cont">
+          <button className="scroll left" onClick={prev}>
+            &lt;
+          </button>
+          <button className="scroll right" onClick={next}>
+            &gt;
+          </button>
+        </div>
+      </div>
+
+      <div className="btn-cont-mobile">
+        <button className="scroll mobile" onClick={prev}>
+          &lt;
+        </button>
+        <button className="scroll mobile" onClick={next}>
+          &gt;
+        </button>
+      </div>
+    </div>
+  );
+}
+
+export default Carousel;
