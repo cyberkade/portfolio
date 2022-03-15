@@ -28,7 +28,8 @@ h1 {
 }
 
 .name {
-  color: #ffa260;
+  color: #e28b67;
+  font-weight: bold;
 }
 
 .view-work-btn {
@@ -42,19 +43,21 @@ h1 {
   cursor: pointer;
   font-size: 2rem;
   padding: 10px 20px;
-  transition: all 0.5s;
+  transition: all 300ms;
   margin-top: 2rem;
+  font-weight: bold;
 }
 
 .view-work-btn:hover {
-  color: #ffa260;
-  border: 2px solid #ffa260;
+  color: #e28b67;
+  border: 2px solid #e28b67;
+  font-weight: bold;
 }
 
 .view-work-btn:hover .arrow-svg {
   transition: all 0.5s;
   transform: rotate(90deg);
-  stroke: #ffa260;
+  stroke: #e28b67;
 }
 
 /* Cool infinite background scrolling animation.

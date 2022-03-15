@@ -1,27 +1,27 @@
 button.learn-more {
-  border-radius: 5%;
+  border-radius: 5px;
   background-color: #2b2c2e;
-  color: #ffa260;
+  color: #e28b67;
   border: 2px solid;
   padding: 1rem 2rem;
   font-size: 1.6rem;
   transition: color 250ms, border-color 0.25s, box-shadow 0.25s, transform 0.25s;
   opacity: 0;
   font-weight: 600;
+  display: inline-block;
 }
 
 button.learn-more:hover {
-  color: #257cb6;
-  font-weight: bold;
-  border-color: #257cb6;
-  box-shadow: 0 0.5em 0.5em -0.4em #257cb6;
+  color: white;
+  /* color: #257cb6; */
+  background-color: #e28b67;
+  border-color: #e28b67;
+  /* box-shadow: 0 0.5em 0.5em -0.4em #e28b67; */
   cursor: pointer;
-  font-weight: 600;
-  display: inline-block;
-  transform: translateY(-0.15em);
+  transform: translateY(-15px);
   /* background-color: #151515; */
 }
-
+/* 
 button.sort {
   border-radius: 5%;
   background-color: #2b2c2e;
@@ -37,7 +37,8 @@ button.sort {
 
 button.sort:focus {
   background-color: white;
-}
+} */
+
 div.card {
   display: flex;
   flex-flow: column nowrap;
@@ -50,7 +51,12 @@ div.card {
 }
 
 div.card.ud {
-  background: center / cover no-repeat url("../images/ud2.png");
+  background: left / cover no-repeat url("../images/ud2.png");
+  /* transition: background 600ms ease-in-out; */
+}
+
+div.card.mov {
+  background: left / cover no-repeat url("../images/mov.png");
   /* transition: background 600ms ease-in-out; */
 }
 
@@ -115,7 +121,7 @@ div.sort-wrap {
   font-weight: bold;
 }
 .project-languages {
-  color: #ffa260;
+  color: #e28b67;
   font-size: 1.6rem;
   font-weight: bold;
 }

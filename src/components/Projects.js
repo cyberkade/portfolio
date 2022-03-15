@@ -19,9 +19,10 @@ const Porfolio = () => {
           <Card
             name={"Spotistats Music Player"}
             languages="React JS / Nodes.js"
+            tag=""
           />
           <Card tag="ud" name="Underdog Devs" languages="React JS / Express" />
-          <Card tag="ud" name="Underdog Devs" languages="React JS / Express" />
+          <Card tag="mov" name="Museum of Vibes" languages="HTML / CSS" />
           <Card tag="ud" name="Underdog Devs" languages="React JS / Express" />
           <Card tag="ud" name="Underdog Devs" languages="React JS / Express" />
           <Card tag="ud" name="Underdog Devs" languages="React JS / Express" />
