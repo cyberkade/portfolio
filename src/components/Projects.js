@@ -1,5 +1,5 @@
 import "../Styles/Projects.css";
-
+import Card from "./Card";
 import React, { useEffect } from "react";
 
 const Porfolio = () => {
@@ -16,48 +16,15 @@ const Porfolio = () => {
           <button className="sort">JavaScript</button>
         </div> */}
         <div className="projects-cont">
-          <div className="card">
-            <div className="projects-text">
-              <h3 className="project-title">Spotistats Music Player</h3>
-              <p className="project-languages">React JS / Node.js</p>
-            </div>
-            <button className="learn-more">Learn More</button>
-          </div>
-          <div className="card ud">
-            <div className="projects-text">
-              <h3 className="project-title">Underdog Devs</h3>
-              <p className="project-languages">React JS / Express</p>
-            </div>
-            <button className="learn-more">Learn More</button>
-          </div>
-          <div className="card">
-            <div className="projects-text">
-              <h3 className="project-title">Project Name</h3>
-              <p className="project-languages">Languages Used</p>
-            </div>
-            <button className="learn-more">Learn More</button>
-          </div>
-          <div className="card">
-            <div className="projects-text">
-              <h3 className="project-title">Project Name</h3>
-              <p className="project-languages">Languages Used</p>
-            </div>
-            <button className="learn-more">Learn More</button>
-          </div>
-          <div className="card">
-            <div className="projects-text">
-              <h3 className="project-title">Project Name</h3>
-              <p className="project-languages">Languages Used</p>
-            </div>
-            <button className="learn-more">Learn More</button>
-          </div>
-          <div className="card">
-            <div className="projects-text">
-              <h3 className="project-title">Project Name</h3>
-              <p className="project-languages">Languages Used</p>
-            </div>
-            <button className="learn-more">Learn More</button>
-          </div>
+          <Card
+            name={"Spotistats Music Player"}
+            languages="React JS / Nodes.js"
+          />
+          <Card tag="ud" name="Underdog Devs" languages="React JS / Express" />
+          <Card tag="ud" name="Underdog Devs" languages="React JS / Express" />
+          <Card tag="ud" name="Underdog Devs" languages="React JS / Express" />
+          <Card tag="ud" name="Underdog Devs" languages="React JS / Express" />
+          <Card tag="ud" name="Underdog Devs" languages="React JS / Express" />
         </div>
       </section>
       <svg

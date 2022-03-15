@@ -5,7 +5,7 @@ button.learn-more {
   border: 2px solid;
   padding: 1rem 2rem;
   font-size: 1.6rem;
-  transition: color 0.25s, border-color 0.25s, box-shadow 0.25s, transform 0.25s;
+  transition: color 250ms, border-color 0.25s, box-shadow 0.25s, transform 0.25s;
   opacity: 0;
   font-weight: 600;
 }
@@ -30,7 +30,7 @@ button.sort {
   border: none;
   padding: 1rem 2rem;
   font-size: 1.6rem;
-  transition: color 0.25s, border-color 0.25s, box-shadow 0.25s, transform 0.25s;
+  transition: color 250ms, border-color 0.25s, box-shadow 0.25s, transform 0.25s;
   font-weight: 600;
   cursor: pointer;
 }
@@ -46,7 +46,7 @@ div.card {
   height: 22rem;
   width: 44rem;
   background: center / cover no-repeat url("../images/spotiCarousel.png");
-  transition: background 600ms;
+  transition: background 250ms;
 }
 
 div.card.ud {
@@ -57,7 +57,7 @@ div.card.ud {
 div.card:hover {
   /* background: rgba(21, 21, 21, 0.3); */
   /* transition: background 600ms ease-in-out; */
-  animation: fade 600ms forwards;
+  animation: fade 250ms forwards;
 }
 
 @keyframes fade {
@@ -76,13 +76,13 @@ div.card:hover {
 }
 
 div.card:hover button.learn-more {
-  transition: all 600ms;
+  transition: all 500ms;
   opacity: 1;
   animation: slide-up 300ms ease-in-out forwards;
 }
 
 div.card:hover .projects-text {
-  transition: all 600ms;
+  transition: all 500ms;
   opacity: 1;
   animation: slide-down 300ms ease-in-out forwards;
   /* transform-origin: top center; */

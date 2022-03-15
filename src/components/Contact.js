@@ -33,9 +33,9 @@ const Contact = () => {
     } else if (contactForm.name.trim() === "" && error.length) {
       setError("Please enter your name");
     } else if (contactForm.message.trim() === "") {
-      setError("Please enter a message to send!");
+      setError("Please enter a message to send");
     } else if (contactForm.email.trim() === "") {
-      setError("Enter a valid email address!");
+      setError("Please enter a valid email address");
     } else {
       setError("");
     }
@@ -60,12 +60,12 @@ const Contact = () => {
       contactForm.email.trim().includes("@") &&
       contactForm.email.trim().includes(".")
     ) {
-      // sendEmail();
+      sendEmail();
       setLoaderActive("active");
       setTimeout(() => setCheckActive("active"), 1800);
       setContactForm(initialState);
     } else {
-      setError("Enter a valid email address!");
+      setError("Please enter a valid email address");
     }
   };
 
