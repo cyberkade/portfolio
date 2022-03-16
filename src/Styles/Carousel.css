@@ -1,52 +1,37 @@
 .btn-cont {
-  width: 85%;
+  width: 100%;
   margin: 0 auto;
   background: none;
   display: flex;
-  justify-content: space-around;
-  position: relative;
+  justify-content: space-between;
+  position: absolute;
+  align-self: flex-end;
 }
 
 .btn-cont-mobile {
   display: none;
 }
 
-button.view {
-  align-self: flex-end;
-  height: 50px;
-  width: 100%;
-  border: none;
-  border-top: 1px solid gray;
-  background-color: #1f1e1e;
-  font-size: 1.2em;
-  transition: all 350ms ease-in-out;
-}
-
-button.view:hover {
-  transition: all 350ms ease-in-out;
-  height: 75px;
-  opacity: 0.8;
-}
-
 button.scroll {
   width: 5em;
   height: 4em;
-  border-radius: 50%;
+  border-radius: 5px;
   background-color: #151515;
   opacity: 0.8;
   color: #ffa260;
   border: 2px solid;
   padding: 1em 2em;
-  font-size: 1em;
+  font-size: 2rem;
   transition: color 0.25s, border-color 0.25s, box-shadow 0.25s, transform 0.25s;
 }
 
 button.scroll:hover {
-  color: #fff;
-  border-color: #f1ff5c;
-  box-shadow: 0 0.5em 0.5em -0.4em #f1ff5c;
-  transform: scale(0.9);
   cursor: pointer;
+}
+
+button.scroll img {
+  transform: scale(1.5);
+  transition: transform 200ms ease-in;
 }
 
 button.scroll:active {
@@ -54,15 +39,17 @@ button.scroll:active {
 }
 
 .carousel-container {
-  width: 40vw;
+  width: 60vw;
   height: 60%;
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
-  border: 2px solid rgba(128, 128, 128, 0.5);
-  border-radius: 5px;
+  /* border: 2px solid rgba(128, 128, 128, 0.5);
+  border-radius: 5px; */
   box-shadow: 0 0 10px gray;
+  display: flex;
+  flex-flow: row nowrap;
 }
 
 .carousel-image-container {
@@ -76,18 +63,17 @@ button.scroll:active {
 }
 
 .slide {
-  margin-top: 1em;
   opacity: 0;
   transition-duration: 1s ease-in-out;
-  position: relative;
   /* width: 100%;
   height: 100%; */
+  position: fixed;
 }
 
 .slide.active {
+  position: relative;
   width: 100%;
   height: 100%;
-  margin-top: 1em;
   opacity: 1;
   transition-duration: 1s ease-in-out;
   animation: rotateY 300ms ease-in-out forwards;
