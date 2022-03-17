@@ -6,13 +6,18 @@ import externalLink from "../images/external-link.png";
 import SS1 from "../images/ss1.png";
 import SS2 from "../images/ss2.png";
 import SS3 from "../images/ss3.png";
-
 import UD1 from "../images/ud1.png";
+import UD2 from "../images/ud2.png";
+import UD3 from "../images/ud3.png";
+
+import MOV1 from "../images/mov.png";
+import MOV2 from "../images/mov2.png";
+// import MOV3 from "../images/mov3.png";
 
 import Carousel from "./Carousel";
-const Modal = ({ toggleModal, name, hide }) => {
+const Modal = ({ toggleModal, name }) => {
   const Spotistats = "https://my-spotistats.netlify.app/";
-  const UnderdogDevs = "https://a.underdogdevs.dev/login";
+  const UnderdogDevs = "";
   const MOV = "";
 
   const siteLink =
@@ -28,7 +33,11 @@ const Modal = ({ toggleModal, name, hide }) => {
     <div className="modal-wrap">
       <div className="mask"></div>
       <div className="modal">
-        <Carousel paths={[SS1, SS3, SS2]} />
+        {name === "Spotistats Music Player" && (
+          <Carousel paths={[SS1, SS3, SS2]} />
+        )}
+        {name === "Underdog Devs" && <Carousel paths={[UD1, UD2, UD3]} />}
+        {name === "Museum of Vibes" && <Carousel paths={[MOV1, MOV2]} />}
         <div className="info-box">
           <div className="site-title">{name}</div>
 
@@ -38,15 +47,42 @@ const Modal = ({ toggleModal, name, hide }) => {
               <div className="details">
                 Spotistats is an app for those REAL music fanatics out there.
                 Check out your listening stats and vibe with your favorite
-                song's lyrics. Created utilizing Spotify API.
+                song's lyrics. Built with React JS, CSS, and Node.js; utilizing
+                Spotify API.
               </div>
             </>
           )}
 
-          {hide === false && (
+          {name === "Underdog Devs" && (
+            <>
+              <div className="tag">Edutech Tool</div>
+              <div className="details">
+                Underdog Devs is a group of software engineers helping aspiring
+                developers who are either formerly incarcerated or from an
+                economically disadvantaged background.
+                <br /> <br /> Built with React JS and Express, our app aids with
+                keeping track of resources, onboarding new mentees & mentors,
+                scheduling meetings, organizing events for the community, and
+                much more!
+              </div>
+            </>
+          )}
+
+          {name === "Museum of Vibes" && (
+            <>
+              <div className="tag">Virtual Art Museum</div>
+              <div className="details">
+                Museum of Vibes is a virtual museum of digital art constructed
+                with JavaScript & CSS to curate an experience fitting to the art
+                on display.
+              </div>
+            </>
+          )}
+
+          {siteLink.href !== "" && (
             <a {...siteLink} rel="noreferrer" target="_blank">
               <div class="button">
-                <img src={externalLink} />
+                <img src={externalLink} alt="external link" />
                 VIEW SITE
               </div>
             </a>

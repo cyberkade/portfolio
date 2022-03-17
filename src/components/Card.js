@@ -9,7 +9,7 @@ function Card({ name, languages, tag, toggleModal }) {
       </div>
       <button
         onClick={() => {
-          toggleModal(name, false);
+          toggleModal(name);
         }}
         className="learn-more"
       >
