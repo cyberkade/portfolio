@@ -21,23 +21,6 @@ button.learn-more:hover {
   transform: translateY(-15px);
   /* background-color: #151515; */
 }
-/* 
-button.sort {
-  border-radius: 5%;
-  background-color: #2b2c2e;
-  opacity: 0.8;
-  color: #ffa260;
-  border: none;
-  padding: 1rem 2rem;
-  font-size: 1.6rem;
-  transition: color 250ms, border-color 0.25s, box-shadow 0.25s, transform 0.25s;
-  font-weight: 600;
-  cursor: pointer;
-}
-
-button.sort:focus {
-  background-color: white;
-} */
 
 div.card {
   display: flex;
