@@ -15,11 +15,11 @@
 button.scroll {
   width: 5em;
   height: 4em;
-  border-radius: 5px;
+  /* border-radius: 5px; */
   background-color: #151515;
   opacity: 0.8;
   color: #ffa260;
-  border: 2px solid;
+  border: 1px solid;
   padding: 1em 2em;
   font-size: 2rem;
   transition: color 0.25s, border-color 0.25s, box-shadow 0.25s, transform 0.25s;
@@ -39,8 +39,8 @@ button.scroll:active {
 }
 
 .carousel-container {
-  width: 60vw;
-  height: 60%;
+  width: 100%;
+  height: 65%;
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
@@ -50,11 +50,13 @@ button.scroll:active {
   box-shadow: 0 0 10px gray;
   display: flex;
   flex-flow: row nowrap;
+  position: relative;
 }
 
 .carousel-image-container {
   width: 100%;
   height: 100%;
+  display: relative;
 }
 
 .carousel-image {
@@ -63,21 +65,25 @@ button.scroll:active {
 }
 
 .slide {
-  opacity: 0;
-  transition-duration: 1s ease-in-out;
-  /* width: 100%;
-  height: 100%; */
-  position: fixed;
+  transform: translate(100%, 0px);
+  -webkit-transform: translate(100%, 0px);
+  -ms-transform: translate(100%, 0px);
+  transition: all 600ms ease-in-out;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  /* animation: rotateY 300ms ease-in-out forwards; */
 }
 
 .slide.active {
-  position: relative;
+  transform: translate(0px, 0px);
+  -webkit-transform: translate(0px, 0px);
+  -ms-transform: translate(0px, 0px);
+  position: absolute;
   width: 100%;
   height: 100%;
   opacity: 1;
-  transition-duration: 1s ease-in-out;
-  animation: rotateY 300ms ease-in-out forwards;
-  transform-origin: center;
+  transition-duration: 600ms ease-in-out;
 }
 
 .top-image-c {
@@ -86,14 +92,14 @@ button.scroll:active {
   position: absolute;
 }
 
-@keyframes rotateY {
+@keyframes slide {
   0% {
-    transform: rotateY(90deg);
+    transform: translate(100%, 0px);
   }
   80% {
-    transform: rotateY(-10deg);
+    transform: translate(20%, 0px);
   }
   100% {
-    transform: rotateY(0);
+    transform: translate(0px, 0px);
   }
 }

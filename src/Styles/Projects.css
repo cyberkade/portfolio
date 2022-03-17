@@ -46,12 +46,12 @@ div.card {
   justify-content: space-evenly;
   height: 22rem;
   width: 44rem;
-  background: center / cover no-repeat url("../images/spotiCarousel.png");
+  background: center / cover no-repeat url("../images/ss1.png");
   transition: background 250ms;
 }
 
 div.card.ud {
-  background: left / cover no-repeat url("../images/ud2.png");
+  background: left / cover no-repeat url("../images/ud1.png");
   /* transition: background 600ms ease-in-out; */
 }
 

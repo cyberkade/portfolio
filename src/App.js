@@ -12,20 +12,24 @@ function App() {
   const [navClass, setNavClass] = useState("");
   const [modalActive, setModalActive] = useState(false);
   const [modalData, setModalData] = useState("");
+  const [hide, setHide] = useState(false);
 
   const viewSection = (directory) => {
     window.location.replace(`/#${directory}`);
     setNavClass("sticky");
   };
 
-  const toggleModal = (appName) => {
+  const toggleModal = (appName, bool) => {
     setModalActive(!modalActive);
     appName ? setModalData(appName) : setModalData("");
+    setHide(bool);
   };
 
   return (
     <div className="App">
-      {modalActive === true && <Modal name={modalData} />}
+      {modalActive === true && (
+        <Modal toggleModal={toggleModal} hide={hide} name={modalData} />
+      )}
       <Landing viewSection={viewSection} />
       <Nav
         navClass={navClass}
