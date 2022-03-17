@@ -1,6 +1,8 @@
 import React from "react";
 import "../Styles/Modal.css";
 import "../Styles/Carousel.css";
+import externalLink from "../images/external-link.png";
+
 import SS1 from "../images/ss1.png";
 import SS2 from "../images/ss2.png";
 import SS3 from "../images/ss3.png";
@@ -35,8 +37,8 @@ const Modal = ({ toggleModal, name, hide }) => {
               <div className="tag">Music Tracking & Streaming Service</div>
               <div className="details">
                 Spotistats is an app for those REAL music fanatics out there.
-                Check your listening stats and vibe with your favorite song's
-                lyrics. Created utilizing Spotify API.
+                Check out your listening stats and vibe with your favorite
+                song's lyrics. Created utilizing Spotify API.
               </div>
             </>
           )}
@@ -44,7 +46,8 @@ const Modal = ({ toggleModal, name, hide }) => {
           {hide === false && (
             <a {...siteLink} rel="noreferrer" target="_blank">
               <div class="button">
-                <i class="mdi mdi-open-in-new"></i>VIEW SITE
+                <img src={externalLink} />
+                VIEW SITE
               </div>
             </a>
           )}

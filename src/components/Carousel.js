@@ -5,7 +5,6 @@ import arrowRight from "../images/arrow-right.png";
 function Carousel({ paths }) {
   const [current, setCurrent] = useState(0);
   const length = paths.length;
-  console.log(paths);
   const next = () => {
     return setCurrent(current === length - 1 ? 0 : current + 1);
   };
@@ -31,15 +30,15 @@ function Carousel({ paths }) {
               key={index}
               className={index === current ? "slide active" : "slide"}
             >
-              {index === current && (
-                <div
-                  style={{
-                    background: ` center / cover no-repeat url(${element}) `,
-                  }}
-                  className="top-image-c"
-                  alt="display of app"
-                ></div>
-              )}
+              {/* {index === current && ( */}
+              <div
+                style={{
+                  background: ` center / cover no-repeat url(${element}) `,
+                }}
+                className="top-image-c"
+                alt="Kade's app screenshot"
+              ></div>
+              {/* )} */}
             </div>
           );
         })}
