@@ -149,3 +149,9 @@ body {
   line-height: 1.25;
   /* background-color: #2b2c2e; */
 }
+
+@media (prefers-reduced-motion) {
+  * {
+    animation: none;
+  }
+}

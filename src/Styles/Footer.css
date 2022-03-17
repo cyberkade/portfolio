@@ -46,9 +46,26 @@ footer {
 .social-logo {
   width: 2.4rem;
   height: 2.4rem;
+  transition: all 300ms ease-in-out;
 }
 
-img.github {
+.social-logo.linkedIn {
+  width: 2.4rem;
+  height: 2.4rem;
+  padding: 1rem;
+}
+
+.social-logo:hover {
+  background-color: #257cb6;
+}
+
+.social-logo.github {
+  width: 2.8rem;
+  height: 2.8rem;
+  padding: 0.8rem;
+}
+
+img.github:hover {
   width: 2.8rem;
   height: 2.8rem;
 }

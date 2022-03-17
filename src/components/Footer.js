@@ -21,7 +21,7 @@ const Footer = ({ viewSection }) => {
             href="https://www.linkedin.com/in/kadeg/"
           >
             <img
-              className="social-logo"
+              className="social-logo linkedIn"
               alt="linkedIn logo link"
               src={LinkedIn}
             ></img>
