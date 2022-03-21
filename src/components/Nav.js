@@ -1,11 +1,20 @@
 import "../Styles/Nav.css";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 const Nav = ({ viewSection, navClass, setNavClass }) => {
+  const [view, setView] = useState("");
   const stickNav = () => {
     if (window !== undefined) {
       let windowHeight = window.scrollY;
-      if (windowHeight >= 995) {
+      console.log(windowHeight);
+      if (windowHeight >= 2911) {
+        setView("contact");
+      } else if (windowHeight >= 2030) {
+        setView("projects");
+      } else if (windowHeight >= 945) {
+        setView("about");
         setNavClass("sticky");
+      } else if (windowHeight < 944) {
+        setView("home");
       }
     }
   };
@@ -21,12 +30,40 @@ const Nav = ({ viewSection, navClass, setNavClass }) => {
   return (
     <nav className={navClass}>
       <ul>
-        <li onClick={() => viewSection("")} k>
+        <li
+          className={view === "home" ? "active" : ""}
+          onClick={() => {
+            viewSection("");
+            setView("home");
+          }}
+          k
+        >
           Home
         </li>
-        <li onClick={() => viewSection("about")}> About</li>
-        <li onClick={() => viewSection("projects")}>Projects</li>
-        <li onClick={() => viewSection("contact")}>Contact</li>
+        <li
+          className={view === "about" ? "active" : ""}
+          onClick={() => {
+            viewSection("about");
+            setView("about");
+          }}
+        >
+          About
+        </li>
+        <li
+          className={view === "projects" ? "active" : ""}
+          onClick={() => {
+            viewSection("projects");
+            setView("projects");
+          }}
+        >
+          Projects
+        </li>
+        <li
+          className={view === "contact" ? "active" : ""}
+          onClick={() => viewSection("contact")}
+        >
+          Contact
+        </li>
         <li onClick={() => viewSection("resume")}>Resume</li>
       </ul>
     </nav>

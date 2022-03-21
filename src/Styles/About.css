@@ -1,5 +1,11 @@
 .about-cont {
-  margin-top: 5rem;
+  width: 85%;
+  /* height: 80vh; */
+  margin: 0 auto;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .code-snippet {
@@ -11,19 +17,9 @@ h2 {
   padding: 1rem;
 }
 
-img {
+div.me-box img {
   height: auto;
   width: 90px;
-}
-
-.info-cont {
-  width: 85%;
-  /* height: 80vh; */
-  margin: 0 auto;
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: space-between;
-  align-items: center;
 }
 
 .me-cont {
@@ -49,10 +45,10 @@ img {
   line-height: 1.4;
 }
 
-.about-cont {
-  width: 85%;
+.info-cont {
+  width: 90%;
   height: auto;
-  /* margin: 2.5rem auto 0 auto; */
+  margin-top: 2.5rem;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-around;
@@ -76,11 +72,7 @@ img {
   background: no-repeat center/100% url("../images/menruby.png");
   width: 25rem;
   height: 25rem;
-  box-shadow: rgba(255, 255, 255, 0.07) 0px 1px 2px,
-    rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(255, 255, 255, 0.07) 0px 4px 8px,
-    rgba(255, 255, 255, 0.07) 0px 8px 16px,
-    rgba(255, 255, 255, 0.07) 0px 16px 32px,
-    rgba(255, 255, 255, 0.07) 0px 32px 64px;
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
   border-radius: 50%;
 }
 
@@ -147,9 +139,118 @@ img {
 } */
 
 @media screen and (max-width: 1700px) {
+  .bio {
+    font-size: 1.4rem;
+    margin-top: 15px;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
   .skill {
     font-size: 1.6rem;
-
-    /* transform: scale(0.5); */
   }
+
+  .me-img {
+    width: 22rem;
+    height: 22rem;
+  }
+
+  .me-text {
+    margin-top: 10px;
+    font-size: 1.4rem;
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 1439px) {
+  .skill {
+    font-size: 1.4rem;
+  }
+  .skills {
+  }
+  .info-cont {
+    justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .about-cont {
+    width: 95%;
+  }
+
+  .skill {
+    font-size: 1.2rem;
+  }
+
+  .skills {
+    margin-left: 20px;
+  }
+
+  .info-cont {
+    justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .skill {
+    font-size: 1.2rem;
+  }
+
+  .skills {
+    height: 45vh;
+    margin: 0 auto;
+  }
+
+  .info-cont {
+    justify-content: space-between;
+  }
+  .bio-wrap {
+    display: none;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+  }
+
+  .me-text {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .skill {
+    /* font-size: 1rem; */
+    box-sizing: border-box;
+    width: auto;
+  }
+
+  .skills {
+    margin: 0px;
+    height: 45vh;
+    margin: 0 auto;
+    width: 90%;
+  }
+
+  .skill-wrap {
+    width: 100%;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+  }
+
+  .me-text {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    width: 90%;
+  }
+
+  /* div.me-box img {
+    height: auto;
+    width: 75px;
+  } */
 }

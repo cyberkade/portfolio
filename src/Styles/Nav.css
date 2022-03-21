@@ -8,6 +8,7 @@ nav {
   transform-origin: top center;
   z-index: 99;
   animation: rotateMenu 500ms ease-in-out forwards;
+  text-align: left;
 }
 
 ul {
@@ -21,6 +22,11 @@ ul {
 li {
   cursor: pointer;
   font-weight: bold;
+  transition: all 600ms ease;
+}
+
+li.active {
+  color: #e28b67;
 }
 
 li:hover {
@@ -45,5 +51,11 @@ li:hover {
   }
   100% {
     transform: rotateX(0deg);
+  }
+}
+
+@media screen and (max-width: 1125px) {
+  ul {
+    width: 55%;
   }
 }

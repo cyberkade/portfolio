@@ -20,7 +20,7 @@ const About = () => {
       <p className="title">About</p>
       <div className="header-bar" />
 
-      <div className="info-cont">
+      <div className="about-cont">
         <div className="me-cont">
           <div className="me-box">
             <img alt="burning heart" src={heart} />
@@ -51,11 +51,11 @@ const About = () => {
           </div>
         </div>
 
-        <div className="about-cont">
+        <div className="info-cont">
           <div className="bio-wrap">
             <div className="me-img" />
             <div className="bio">
-              <p style={{ fontWeight: "bold" }}>Who? What?</p>
+              <p style={{ fontWeight: "bold" }}>Who's That Guy?</p>
               <br /> I am currently a Front End Developer for Real People
               Reviews. I have a serious passion for giving back to the world and
               I live that through my coding.
