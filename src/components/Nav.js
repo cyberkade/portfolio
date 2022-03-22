@@ -5,6 +5,7 @@ const Nav = ({ viewSection, navClass, setNavClass }) => {
   const stickNav = () => {
     if (window !== undefined) {
       let windowHeight = window.scrollY;
+      console.log(window.screen);
       console.log(windowHeight);
       if (windowHeight >= 2911) {
         setView("contact");
