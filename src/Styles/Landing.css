@@ -28,7 +28,7 @@ h1 {
 }
 
 .name {
-  color: #e28b67;
+  color: #bb86fc;
   font-weight: bold;
 }
 
@@ -49,23 +49,15 @@ h1 {
 }
 
 .view-work-btn:hover {
-  color: #e28b67;
-  border: 2px solid #e28b67;
-  font-weight: bold;
+  color: #bb86fc;
+  border: 2px solid #bb86fc;
 }
 
 .view-work-btn:hover .arrow-svg {
   transition: all 0.5s;
   transform: rotate(90deg);
-  stroke: #e28b67;
+  stroke: #bb86fc;
 }
-
-/* Cool infinite background scrolling animation.
- * Twitter: @kootoopas
- */
-
-/* Exo thin font from Google. */
-@import url(https://fonts.googleapis.com/css?family=Exo:100);
 
 /* Animations */
 @-webkit-keyframes bg-scrolling-reverse {
@@ -120,4 +112,18 @@ h1 {
   -moz-animation: bg-scrolling-reverse linear 1.82s infinite; /* Fx 5+ */
   -o-animation: bg-scrolling-reverse linear 1.82s infinite; /* Opera 12+ */
   animation: bg-scrolling-reverse linear 1.82s infinite; /* IE 10+ */
+}
+
+@media screen and (max-width: 650px) {
+  .info-div {
+    font-size: 3.8rem;
+    line-height: 1.25;
+  }
+
+  .view-work-btn {
+    width: 30%;
+    font-size: 1.6rem;
+    padding: 10px 20px;
+    margin-top: 2rem;
+  }
 }

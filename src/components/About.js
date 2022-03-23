@@ -5,6 +5,10 @@ import quick from "../images/fast-time.png";
 import Draggable from "react-draggable";
 
 const About = () => {
+  let windowWidth;
+  if (window !== undefined) {
+    windowWidth = window.innerWidth;
+  }
   // onStart = () => {
   //   setDrags({activeDrags: ++this.state.activeDrags});
   // };
@@ -73,7 +77,7 @@ const About = () => {
               <h2 className="skill">Redux</h2>
               <h2 className="skill">Jest</h2>
               <h2 className="skill">Algorithms</h2>
-              <h2 className="skill">Deployment</h2>
+              {windowWidth > 760 && <h2 className="skill">Deployment</h2>}
             </div>
 
             <div className="skill-wrap">
@@ -83,7 +87,7 @@ const About = () => {
               <h2 className="skill">Express</h2>
               <h2 className="skill">SQL</h2>
               <h2 className="skill">Git CLI</h2>
-              <h2 className="skill">Agile Management</h2>
+              {windowWidth > 760 && <h2 className="skill">Agile Management</h2>}
             </div>
           </div>
         </div>

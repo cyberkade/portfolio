@@ -1,4 +1,4 @@
-.contact {
+.contact-div {
   margin: 1.5rem 0 4rem 0;
 }
 
@@ -10,7 +10,7 @@
   /* transition: all 500ms linear; */
 }
 
-form {
+form.contact-form {
   width: 25%;
   margin-top: 4rem;
   display: flex;
@@ -147,4 +147,28 @@ input:nth-of-type(3) {
 
 textarea {
   height: 12rem;
+}
+
+@media screen and (max-width: 1200px) {
+  form.contact-form {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  form.contact-form {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  form.contact-form {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  form.contact-form {
+    width: 80%;
+  }
 }

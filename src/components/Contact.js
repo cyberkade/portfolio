@@ -89,7 +89,7 @@ const Contact = () => {
   return (
     <section id="contact">
       <p className="title">Contact</p>
-      <div className="header-bar contact" />
+      <div className="header-bar contact-div" />
       <p style={{ fontWeight: "bold", color: "#257cb6" }}>
         Questions? Interested in working together?
       </p>
