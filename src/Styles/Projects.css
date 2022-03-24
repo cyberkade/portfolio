@@ -131,3 +131,17 @@ section.projects-section {
     transform: translateY(0px);
   }
 }
+
+@media screen and (max-width: 1175px) {
+  div.card {
+    height: 22rem;
+    width: 33rem;
+  }
+}
+
+@media screen and (max-width: 885px) {
+  div.card {
+    height: 22rem;
+    width: 38rem;
+  }
+}

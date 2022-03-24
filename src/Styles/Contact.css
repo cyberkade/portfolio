@@ -172,3 +172,9 @@ textarea {
     width: 80%;
   }
 }
+
+@media screen and (max-width: 330px) {
+  #contact p:nth-child(3) {
+    font-size: 1.4rem;
+  }
+}
