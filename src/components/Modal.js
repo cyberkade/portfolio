@@ -73,8 +73,8 @@ const Modal = ({ toggleModal, name }) => {
               <div className="tag">Virtual Art Museum</div>
               <div className="details">
                 Museum of Vibes is a virtual museum of digital art constructed
-                with JavaScript & CSS to curate an experience fitting to the art
-                on display.
+                with JavaScript & CSS to curate unique experiences fitting to
+                the theme of art on display.
               </div>
             </>
           )}

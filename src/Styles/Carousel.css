@@ -93,15 +93,3 @@ button.scroll:active {
   height: 100%;
   position: absolute;
 }
-
-@keyframes slide {
-  0% {
-    transform: translate(100%, 0px);
-  }
-  80% {
-    transform: translate(20%, 0px);
-  }
-  100% {
-    transform: translate(0px, 0px);
-  }
-}

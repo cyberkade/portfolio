@@ -161,6 +161,7 @@ div.me-box img {
     margin-top: 10px;
     font-size: 1.4rem;
     width: 90%;
+    height: 79px;
   }
 }
 
@@ -191,6 +192,10 @@ div.me-box img {
   .info-cont {
     justify-content: space-between;
   }
+
+  .me-text {
+    height: 101px;
+  }
 }
 
 @media screen and (max-width: 1000px) {
@@ -201,6 +206,7 @@ div.me-box img {
   .skills {
     height: 45vh;
     margin: 0 auto;
+    text-align: center;
   }
 
   .info-cont {
@@ -218,6 +224,7 @@ div.me-box img {
     margin-top: 10px;
     font-size: 1.2rem;
     width: 90%;
+    height: 101px;
   }
 }
 
@@ -272,7 +279,6 @@ div.me-box img {
     flex-flow: column nowrap;
     justify-content: space-evenly;
     align-items: center;
-    text-align: center;
   }
   .info-cont {
     width: 100%;

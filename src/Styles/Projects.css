@@ -29,8 +29,8 @@ div.card {
   justify-content: space-evenly;
   height: 22rem;
   width: 44rem;
-  background: center / cover no-repeat url("../images/ss1.png");
-  transition: background 250ms;
+  background: left / cover no-repeat url("../images/ss1.png");
+  transition: all 250ms;
 }
 
 div.card.ud {
@@ -133,9 +133,13 @@ section.projects-section {
 }
 
 @media screen and (max-width: 1175px) {
-  div.card {
+  /* div.card {
     height: 22rem;
     width: 33rem;
+  } */
+
+  .projects-cont {
+    width: 100vw;
   }
 }
 
@@ -143,5 +147,12 @@ section.projects-section {
   div.card {
     height: 22rem;
     width: 38rem;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  div.card {
+    height: 22rem;
+    width: 30rem;
   }
 }

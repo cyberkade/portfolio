@@ -169,6 +169,17 @@ div.info-box a {
   .modal-wrap .button {
     left: 10px;
   }
+
+  @keyframes modal-fade {
+    0% {
+      opacity: 0;
+      transform: scale(0.6);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(0.7);
+    }
+  }
 }
 
 @media screen and (max-width: 585px) {
@@ -179,6 +190,17 @@ div.info-box a {
   }
   .modal-wrap .details {
     /* font-size: 1.6rem; */
+  }
+
+  @keyframes modal-fade {
+    0% {
+      opacity: 0;
+      transform: scale(0.5);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(0.6);
+    }
   }
 }
 
@@ -191,13 +213,45 @@ div.info-box a {
   .modal-wrap .details {
     /* font-size: 1.6rem; */
   }
+
+  @keyframes modal-fade {
+    0% {
+      opacity: 0;
+      transform: scale(0.45);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(0.55);
+    }
+  }
 }
 
 @media screen and (max-width: 460px) {
+  .project-title {
+    font-size: 1.8rem;
+  }
+  .project-languages {
+    font-size: 1.4rem;
+  }
+  button.learn-more {
+    font-size: 1.4rem;
+  }
+
   .modal-wrap .modal {
     transform: scale(0.5);
     width: 1235px;
     min-width: 750px;
+  }
+
+  @keyframes modal-fade {
+    0% {
+      opacity: 0;
+      transform: scale(0.4);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(0.5);
+    }
   }
 }
 
@@ -207,6 +261,16 @@ div.info-box a {
     width: 1135px;
     /* min-width: 750px; */
   }
+  @keyframes modal-fade {
+    0% {
+      opacity: 0;
+      transform: scale(0.35);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(0.45);
+    }
+  }
 }
 
 @media screen and (max-width: 340px) {
@@ -214,5 +278,15 @@ div.info-box a {
     transform: scale(0.4);
     width: 1135px;
     /* min-width: 750px; */
+  }
+  @keyframes modal-fade {
+    0% {
+      opacity: 0;
+      transform: scale(0.3);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(0.4);
+    }
   }
 }

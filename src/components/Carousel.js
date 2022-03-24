@@ -33,7 +33,7 @@ function Carousel({ paths }) {
               {/* {index === current && ( */}
               <div
                 style={{
-                  background: ` center / cover no-repeat url(${element}) `,
+                  background: ` top / cover no-repeat url(${element}) `,
                 }}
                 className="top-image-c"
                 alt="Kade's app screenshot"
