@@ -143,7 +143,7 @@ section.projects-section {
   }
 }
 
-@media screen and (max-width: 885px) {
+@media screen and (max-width: 450px) {
   div.card {
     height: 22rem;
     width: 38rem;

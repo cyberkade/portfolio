@@ -27,8 +27,10 @@ const About = () => {
       <div className="about-cont">
         <div className="me-cont">
           <div className="me-box">
-            <img alt="burning heart" src={heart} />
-            <h2>Passionate</h2>
+            <div className="icon-cont">
+              <img alt="burning heart" src={heart} />
+              <h2>Passionate</h2>
+            </div>
             <p className="me-text">
               Passionate coding geek, but more importantly, just a compassionate
               person. Catch me jammin' out and exploring the latest technologies
@@ -36,17 +38,21 @@ const About = () => {
             </p>
           </div>
           <div className="me-box">
-            <img alt="brain lightbulb" src={bulb} />
-            <h2>Creative Mind</h2>
+            <div className="icon-cont">
+              <img alt="brain lightbulb" src={bulb} />
+              <h2>Creative Mind</h2>
+            </div>
             <p className="me-text">
               I've never shied away from formulating creative solutions for
               complex problems. My experience in music engineering and arts &
               crafts translates to my work in many ways
             </p>
           </div>
-          <div className="me-box">
-            <img alt="burning heart" src={quick} />
-            <h2>Quick Learner</h2>
+          <div className="me-box mobile">
+            <div className="icon-cont">
+              <img alt="burning heart" src={quick} />
+              <h2>Quick Learner</h2>
+            </div>
             <p className="me-text">
               I'm confident in my ability to pick up on new concepts quick. I'll
               adapt to your tech stack with optimism and eagerness. Give me an
