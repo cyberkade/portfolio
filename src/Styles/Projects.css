@@ -43,6 +43,11 @@ div.card.mov {
   /* transition: background 600ms ease-in-out; */
 }
 
+div.card.brawl {
+  background: top / cover no-repeat url("../images/brawl1.png");
+  /* transition: background 600ms ease-in-out; */
+}
+
 div.card:hover {
   /* background: rgba(21, 21, 21, 0.3); */
   /* transition: background 600ms ease-in-out; */
@@ -147,6 +152,15 @@ section.projects-section {
   div.card {
     height: 22rem;
     width: 38rem;
+  }
+  .project-title {
+    font-size: 1.8rem;
+  }
+  .project-languages {
+    font-size: 1.4rem;
+  }
+  button.learn-more {
+    font-size: 1.4rem;
   }
 }
 

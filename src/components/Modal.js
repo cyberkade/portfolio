@@ -2,6 +2,7 @@ import React from "react";
 import "../Styles/Modal.css";
 import "../Styles/Carousel.css";
 import externalLink from "../images/external-link.png";
+import gitHub from "../images/github-32.png";
 
 import SS1 from "../images/ss1.png";
 import SS2 from "../images/ss2.png";
@@ -9,24 +10,23 @@ import SS3 from "../images/ss3.png";
 import UD1 from "../images/ud1.png";
 import UD2 from "../images/ud2.png";
 import UD3 from "../images/ud3.png";
-
 import MOV1 from "../images/mov.png";
 import MOV2 from "../images/mov2.png";
-// import MOV3 from "../images/mov3.png";
+
+import brawl1 from "../images/brawl1.png";
+import brawl2 from "../images/brawl2.png";
 
 import Carousel from "./Carousel";
 const Modal = ({ toggleModal, name }) => {
-  const Spotistats = "https://my-spotistats.netlify.app/";
-  const UnderdogDevs = "";
-  const MOV = "";
-
   const siteLink =
     name === "Spotistats Music Player"
-      ? { href: Spotistats }
+      ? { href: "https://my-spotistats.netlify.app/" }
       : name === "Underdog Devs"
-      ? { href: UnderdogDevs }
+      ? { href: "" }
       : name === "Museum of Vibes"
-      ? { href: MOV }
+      ? { href: "" }
+      : name === "Brawl!"
+      ? { href: "https://gobrawl.netlify.app/" }
       : {};
 
   return (
@@ -38,6 +38,7 @@ const Modal = ({ toggleModal, name }) => {
         )}
         {name === "Underdog Devs" && <Carousel paths={[UD1, UD2, UD3]} />}
         {name === "Museum of Vibes" && <Carousel paths={[MOV1, MOV2]} />}
+        {name === "Brawl!" && <Carousel paths={[brawl1, brawl2]} />}
         <div className="info-box">
           <div className="site-title">{name}</div>
 
@@ -79,6 +80,23 @@ const Modal = ({ toggleModal, name }) => {
             </>
           )}
 
+          {name === "Brawl!" && (
+            <>
+              <div className="tag">Multiplayer Fighting Game</div>
+              <div className="details">
+                Brawl! brings JavaScript classes and event listeners together
+                with the Canvas API to create an eye catching fighter game with
+                fancy animations and pixel art sprites. Take it back to the old
+                days and have some fun playing with a friend on the same
+                keyboard!
+              </div>
+            </>
+          )}
+          <a {...siteLink} rel="noreferrer" target="_blank">
+            <div class="button2">
+              <img src={gitHub} alt="github site link" />
+            </div>
+          </a>
           {siteLink.href !== "" && (
             <a {...siteLink} rel="noreferrer" target="_blank">
               <div class="button">

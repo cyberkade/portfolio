@@ -30,15 +30,15 @@ const Porfolio = ({ toggleModal }) => {
           />
           <Card
             toggleModal={toggleModal}
-            name="Museum of Vibes"
-            languages="HTML / CSS"
-            tag="mov"
+            name="Brawl!"
+            languages="JavaScript / Canvas"
+            tag="brawl"
           />
           <Card
             toggleModal={toggleModal}
-            name="Underdog Devs"
-            languages="React JS / Express"
-            tag="ud"
+            name="Museum of Vibes"
+            languages="HTML / CSS"
+            tag="mov"
           />
           <Card
             toggleModal={toggleModal}
