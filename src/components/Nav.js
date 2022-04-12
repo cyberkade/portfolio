@@ -7,7 +7,6 @@ const Nav = ({ viewSection, navClass, setNavClass }) => {
   const [view, setView] = useState("");
   const [mobile, setMobile] = useState(null);
   let windowWidth = window.innerWidth;
-  console.log(windowWidth);
   const checkWidth = () => {
     let windowWidth = window.innerWidth;
     if (windowWidth < 600) {
@@ -15,8 +14,6 @@ const Nav = ({ viewSection, navClass, setNavClass }) => {
     } else {
       setMobile(false);
     }
-    // console.log(windowWidth);
-    // console.log(mobile);
   };
 
   const displayNav = () => {
@@ -28,8 +25,6 @@ const Nav = ({ viewSection, navClass, setNavClass }) => {
   const stickNav = () => {
     if (window !== undefined) {
       let windowHeight = window.scrollY;
-      // console.log(window);
-      // console.log(windowHeight);
       if (windowHeight >= 2911) {
         setView("contact");
       } else if (windowHeight >= 2030) {

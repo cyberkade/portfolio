@@ -17,7 +17,6 @@ const Contact = () => {
   const [contactForm, setContactForm] = useState(initialState);
 
   useEffect(() => {
-    console.log("ran code");
     if (contactForm.message.trim() === "") {
       setDisabled(true);
     } else {
@@ -79,10 +78,10 @@ const Contact = () => {
       )
       .then(
         (result) => {
-          console.log(result.text);
+          // console.log(result.text);
         },
         (error) => {
-          console.log(error.text);
+          // console.log(error.text);
         }
       );
   };
