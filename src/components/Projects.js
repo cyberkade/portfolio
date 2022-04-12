@@ -40,8 +40,8 @@ const Porfolio = ({ toggleModal }) => {
             languages="HTML / CSS"
             tag="mov"
           />
-          <Card toggleModal={toggleModal} name="" languages="" tag="" />
-          <Card toggleModal={toggleModal} name="" languages="" tag="" />
+          {/* <Card toggleModal={toggleModal} name="" languages="" tag="" />
+          <Card toggleModal={toggleModal} name="" languages="" tag="" /> */}
         </div>
       </section>
       <svg
