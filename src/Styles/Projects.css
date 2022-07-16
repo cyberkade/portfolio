@@ -151,7 +151,7 @@ section.projects-section {
 @media screen and (max-width: 450px) {
   div.card {
     height: 22rem;
-    width: 38rem;
+    width: 36rem;
   }
   .project-title {
     font-size: 1.8rem;

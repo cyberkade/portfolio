@@ -53,7 +53,7 @@ const About = () => {
               <img alt="burning heart" src={quick} />
               <h2>Quick Learner</h2>
             </div>
-            <p className="me-text">
+            <p style={{ fontWeight: "bold" }} className="me-text">
               I'm confident in my ability to pick up on new concepts quick. I'll
               adapt to your tech stack with optimism and eagerness. Give me an
               opportunity to learn and I'll take it!
@@ -64,11 +64,11 @@ const About = () => {
         <div className="info-cont">
           <div className="bio-wrap">
             <div className="me-img" />
-            <div className="bio">
+            <div style={{ fontWeight: "bold" }} className="bio">
               <p style={{ fontWeight: "bold" }}>Who's That Guy?</p>
-              <br /> I am currently a Front End Developer for Real People
-              Reviews. I have a serious passion for giving back to the world and
-              I live that through my coding.
+              <br /> I am currently a Full Stack Developer at Easier Accounting.
+              I have a serious passion for giving back to the world and I live
+              that through my coding.
             </div>
           </div>
 

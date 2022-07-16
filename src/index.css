@@ -149,6 +149,16 @@ body {
   /* background-color: #2b2c2e; */
 }
 
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+}
+
 @media (prefers-reduced-motion) {
   * {
     animation: none;

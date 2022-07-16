@@ -17,3 +17,8 @@ section {
   font-size: 4rem;
   margin-top: 1.8rem;
 }
+@media screen and (max-width: 570px) {
+  .header-bar {
+    margin: 1.5rem 0 4rem 0;
+  }
+}
