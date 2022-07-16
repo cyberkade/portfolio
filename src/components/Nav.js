@@ -77,7 +77,7 @@ const Nav = ({ viewSection, navClass, setNavClass }) => {
             >
               Contact
             </li>
-            <li onClick={() => viewSection("resume")}>Resume</li>
+            {/* <li onClick={() => viewSection("resume")}>Resume</li> */}
           </>
         ) : (
           <li onClick={() => displayNav()} className={`${clicked} dropdown `}>
@@ -107,7 +107,7 @@ const Nav = ({ viewSection, navClass, setNavClass }) => {
               >
                 Contact
               </li>
-              <li className="resume">Resume</li>
+              {/* <li className="resume">Resume</li> */}
             </ul>
           </li>
         )}
