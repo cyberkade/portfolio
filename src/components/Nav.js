@@ -80,7 +80,11 @@ const Nav = ({ viewSection, navClass, setNavClass }) => {
             {/* <li onClick={() => viewSection("resume")}>Resume</li> */}
           </>
         ) : (
-          <li onClick={() => displayNav()} className={`${clicked} dropdown `}>
+          <li
+            onClick={() => displayNav()}
+            aria-label={"menu"}
+            className={`${clicked} dropdown `}
+          >
             <img src={menu} />
             <ul className={`dropdown-menu `}>
               <li
