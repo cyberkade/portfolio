@@ -114,10 +114,12 @@ const Contact = () => {
           value={contactForm.message}
           onChange={handleChange}
         />
-        <div className="submit-wrap">
-          <p className="error-message">{error}</p>
-          <input disabled={disabled} type="submit" value="Send" />
-        </div>
+        {!checkActive && (
+          <div className="submit-wrap">
+            <p className="error-message">{error}</p>
+            <input disabled={disabled} type="submit" value="Send" />
+          </div>
+        )}
         <div className={`loader ${loaderActive}`}>
           <div className={`check ${checkActive}`}>
             <span className="check-one"></span>
@@ -125,11 +127,6 @@ const Contact = () => {
           </div>
         </div>
       </form>
-      {/* <div className="contact-form">
-        <input placeholder="Name" />
-        <input placeholder="Enter Email" />
-        <input placeholder="Your Message" />
-      </div> */}
     </section>
   );
 };

@@ -26,7 +26,29 @@ const About = () => {
 
       <div className="about-cont">
         <div className="me-cont">
-          <div className="me-box">
+          <div className="me-box mobile">
+            <div className="icon-cont">
+              <img alt="brain lightbulb" src={bulb} />
+              <h2>Creative Mind</h2>
+            </div>
+            <p className="me-text">
+              I've never shied away from formulating creative solutions for
+              complex problems. My past experience in music engineering and
+              arts/crafts emerges in my work.
+            </p>
+          </div>
+          <div className="me-box mobile">
+            <div className="icon-cont">
+              <img alt="burning heart" src={quick} />
+              <h2>Quick Learner</h2>
+            </div>
+            <p style={{ fontWeight: "bold" }} className="me-text">
+              I am confident in my ability to pick up on new concepts quick.
+              I'll adapt to your tech stack with optimism and eagerness. Give me
+              an opportunity to learn and I'll take it!
+            </p>
+          </div>
+          <div className="me-box mobile">
             <div className="icon-cont">
               <img alt="burning heart" src={heart} />
               <h2>Passionate</h2>
@@ -37,38 +59,16 @@ const About = () => {
               in my free time!
             </p>
           </div>
-          <div className="me-box">
-            <div className="icon-cont">
-              <img alt="brain lightbulb" src={bulb} />
-              <h2>Creative Mind</h2>
-            </div>
-            <p className="me-text">
-              I've never shied away from formulating creative solutions for
-              complex problems. My experience in music engineering and arts &
-              crafts translates to my work in many ways
-            </p>
-          </div>
-          <div className="me-box mobile">
-            <div className="icon-cont">
-              <img alt="burning heart" src={quick} />
-              <h2>Quick Learner</h2>
-            </div>
-            <p style={{ fontWeight: "bold" }} className="me-text">
-              I'm confident in my ability to pick up on new concepts quick. I'll
-              adapt to your tech stack with optimism and eagerness. Give me an
-              opportunity to learn and I'll take it!
-            </p>
-          </div>
         </div>
 
         <div className="info-cont">
           <div className="bio-wrap">
             <div className="me-img" />
             <div style={{ fontWeight: "bold" }} className="bio">
-              <p style={{ fontWeight: "bold" }}>Who's That Guy?</p>
-              <br /> I am currently a Full Stack Developer at Easier Accounting.
-              I have a serious passion for giving back to the world and I live
-              that through my coding.
+              <p style={{ fontWeight: "bold" }}>Who Am I?</p>
+              <br /> I am a Full Stack Developer looking for job opportunities
+              that encourage growth. As long as I am improving my existing
+              skills and learning new concepts I am a happy guy!
             </div>
           </div>
 
@@ -92,8 +92,11 @@ const About = () => {
               <h2 className="skill">Axios</h2>
               <h2 className="skill">Express</h2>
               <h2 className="skill">SQL</h2>
+              <h2 className="skill">PHP</h2>
+              <h2 className="skill">Go</h2>
               <h2 className="skill">Git CLI</h2>
-              {windowWidth > 760 && <h2 className="skill">Agile Management</h2>}
+              <h2 className="skill">Agile Management</h2>
+              {/* {windowWidth > 760 && <h2 className="skill">Agile Management</h2>} */}
             </div>
           </div>
         </div>

@@ -111,7 +111,7 @@ div.me-box img {
 }
 
 .skills {
-  width: 75%;
+  width: 80%;
   position: relative;
   display: flex;
   flex-flow: column;
@@ -237,7 +237,8 @@ div.me-box img {
     justify-content: space-between;
   }
   .me-box.mobile {
-    margin-top: 6rem;
+    margin-bottom: 3rem;
+    /* margin-top: 6rem; */
     width: 100vw;
   }
 }
