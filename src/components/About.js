@@ -2,22 +2,10 @@ import "../Styles/About.css";
 import bulb from "../images/bulb.png";
 import heart from "../images/heart.png";
 import quick from "../images/fast-time.png";
-import Draggable from "react-draggable";
+import useWindowDimensions from "../Hooks/useWindowDimensions";
 
 const About = () => {
-  let windowWidth;
-  if (window !== undefined) {
-    windowWidth = window.innerWidth;
-  }
-  // onStart = () => {
-  //   setDrags({activeDrags: ++this.state.activeDrags});
-  // };
-
-  // onStop = () => {
-  //   setDrags({activeDrags: --this.state.activeDrags});
-  // };
-
-  // const dragHandlers = {onStart: onStart, onStop: onStop};
+  const { width } = useWindowDimensions();
 
   return (
     <section id="about">
@@ -83,7 +71,7 @@ const About = () => {
               <h2 className="skill">Redux</h2>
               <h2 className="skill">Jest</h2>
               <h2 className="skill">Algorithms</h2>
-              {windowWidth > 760 && <h2 className="skill">Deployment</h2>}
+              {width > 760 && <h2 className="skill">Deployment</h2>}
             </div>
 
             <div className="skill-wrap">
@@ -95,7 +83,7 @@ const About = () => {
               <h2 className="skill">PHP</h2>
               <h2 className="skill">Go</h2>
               <h2 className="skill">Git CLI</h2>
-              <h2 className="skill">Agile Management</h2>
+              <h2 className="skill">Agile Methodology</h2>
               {/* {windowWidth > 760 && <h2 className="skill">Agile Management</h2>} */}
             </div>
           </div>
