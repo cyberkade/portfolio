@@ -4,11 +4,11 @@ import heart from "../images/heart.png";
 import quick from "../images/fast-time.png";
 import useWindowDimensions from "../Hooks/useWindowDimensions";
 
-const About = () => {
+const About = ({ aboutRef }) => {
   const { width } = useWindowDimensions();
 
   return (
-    <section id="about">
+    <section ref={aboutRef} id="about">
       <p className="title">About</p>
       <div className="header-bar" />
 

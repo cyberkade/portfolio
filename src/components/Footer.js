@@ -4,12 +4,12 @@ import Chevron from "../images/chevronBlue.png";
 import LinkedIn from "../images/linkedin-24.png";
 import GitHub from "../images/github-32.png";
 
-const Footer = ({ viewSection }) => {
+const Footer = ({ viewSection, scrollSmoothHandler, landingRef }) => {
   return (
     <footer id={"footer"}>
       <div className={"footer-wrap"}>
         <img
-          onClick={() => viewSection("")}
+          onClick={() => scrollSmoothHandler(landingRef)}
           className={"chevron"}
           alt={"return to home"}
           src={Chevron}

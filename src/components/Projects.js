@@ -2,11 +2,11 @@ import "../Styles/Projects.css";
 import Card from "./Card";
 import React, { useEffect } from "react";
 
-const Porfolio = ({ toggleModal }) => {
+const Projects = ({ toggleModal, projectsRef }) => {
   useEffect(() => {}, []);
   return (
     <>
-      <section className="projects-section" id="projects">
+      <section ref={projectsRef} className="projects-section" id="projects">
         <p className="title">Projects</p>
         <div className="header-bar" />
         {/* <div className="sort-wrap">
@@ -59,4 +59,4 @@ const Porfolio = ({ toggleModal }) => {
   );
 };
 
-export default Porfolio;
+export default Projects;

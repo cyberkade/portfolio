@@ -1,20 +1,21 @@
 import "../Styles/Nav.css";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import menu from "../images/menu-24.png";
+import useWindowDimensions from "../Hooks/useWindowDimensions";
 
-const Nav = ({ viewSection, navClass, setNavClass }) => {
+const Nav = ({
+  // viewSection,
+  scrollSmoothHandler,
+  navClass,
+  setNavClass,
+  aboutRef,
+  projectsRef,
+  contactRef,
+  landingRef,
+}) => {
   const [clicked, setClicked] = useState("");
   const [view, setView] = useState("");
-  const [mobile, setMobile] = useState(null);
-  let windowWidth = window.innerWidth;
-  const checkWidth = () => {
-    let windowWidth = window.innerWidth;
-    if (windowWidth < 600) {
-      setMobile(true);
-    } else {
-      setMobile(false);
-    }
-  };
+  const { width } = useWindowDimensions();
 
   const displayNav = () => {
     if (clicked === "clicked") {
@@ -24,15 +25,15 @@ const Nav = ({ viewSection, navClass, setNavClass }) => {
 
   const stickNav = () => {
     if (window !== undefined) {
-      let windowHeight = window.scrollY;
-      if (windowHeight >= 2911) {
+      let pageLocation = window.scrollY;
+      if (pageLocation >= 2911) {
         setView("contact");
-      } else if (windowHeight >= 2030) {
+      } else if (pageLocation >= 2030) {
         setView("projects");
-      } else if (windowHeight >= 945) {
+      } else if (pageLocation >= 945) {
         setView("about");
         setNavClass("sticky");
-      } else if (windowHeight < 944) {
+      } else if (pageLocation < 944) {
         setView("home");
       }
     }
@@ -40,40 +41,38 @@ const Nav = ({ viewSection, navClass, setNavClass }) => {
 
   useEffect(() => {
     window.addEventListener("scroll", stickNav);
-    window.addEventListener("resize", checkWidth);
 
     return () => {
       window.removeEventListener("scroll", stickNav);
-      window.removeEventListener("resize", checkWidth);
     };
   }, []);
 
   return (
     <nav className={navClass}>
       <ul>
-        {windowWidth > 600 ? (
+        {width > 600 ? (
           <>
             <li
               className={view === "home" ? "active" : ""}
-              onClick={() => viewSection("")}
+              onClick={() => scrollSmoothHandler(landingRef)}
             >
               Home
             </li>
             <li
               className={view === "about" ? "active" : ""}
-              onClick={() => viewSection("about")}
+              onClick={() => scrollSmoothHandler(aboutRef)}
             >
               About
             </li>
             <li
               className={view === "projects" ? "active" : ""}
-              onClick={() => viewSection("projects")}
+              onClick={() => scrollSmoothHandler(projectsRef)}
             >
               Projects
             </li>
             <li
               className={view === "contact" ? "active" : ""}
-              onClick={() => viewSection("contact")}
+              onClick={() => scrollSmoothHandler(contactRef)}
             >
               Contact
             </li>
@@ -89,25 +88,25 @@ const Nav = ({ viewSection, navClass, setNavClass }) => {
             <ul className={`dropdown-menu `}>
               <li
                 className={view === "home" ? "active" : ""}
-                onClick={() => viewSection("")}
+                onClick={() => scrollSmoothHandler(landingRef)}
               >
                 Home
               </li>
               <li
                 className={view === "about" ? "active" : ""}
-                onClick={() => viewSection("about")}
+                onClick={() => scrollSmoothHandler(aboutRef)}
               >
                 About
               </li>
               <li
                 className={view === "projects" ? "active" : ""}
-                onClick={() => viewSection("projects")}
+                onClick={() => scrollSmoothHandler(projectsRef)}
               >
                 Projects
               </li>
               <li
                 className={view === "contact" ? "active" : ""}
-                onClick={() => viewSection("contact")}
+                onClick={() => scrollSmoothHandler(contactRef)}
               >
                 Contact
               </li>

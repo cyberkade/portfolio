@@ -1,14 +1,23 @@
 import "../Styles/Landing.css";
-const Landing = ({ viewSection }) => {
+import { forwardRef } from "react";
+const Landing = ({
+  viewSection,
+  scrollSmoothHandler,
+  aboutRef,
+  landingRef,
+}) => {
   return (
-    <div className="landing-cont">
+    <div ref={landingRef} className="landing-cont">
       <div className="info-div">
         <h1>
           Welcome, I'm <span className="name">Kade Griffith</span>.
           <br />
           I'm a Full Stack Developer.
         </h1>
-        <button onClick={() => viewSection("about")} className="view-work-btn">
+        <button
+          onClick={() => scrollSmoothHandler(aboutRef)}
+          className="view-work-btn"
+        >
           View My Work
           <svg
             className="arrow-svg"
@@ -43,4 +52,4 @@ const Landing = ({ viewSection }) => {
     </div>
   );
 };
-export default Landing;
+export default forwardRef(Landing);

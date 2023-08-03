@@ -8,13 +8,14 @@ const initialState = {
   message: "",
 };
 
-const Contact = () => {
+const Contact = ({ contactRef }) => {
   const form = useRef();
   const [error, setError] = useState("");
   const [disabled, setDisabled] = useState(true);
   const [loaderActive, setLoaderActive] = useState("");
-  const [checkActive, setCheckActive] = useState("");
+  const [checkActive, setCheckActive] = useState(false);
   const [contactForm, setContactForm] = useState(initialState);
+  const [trollMsgActive, setTrollMsgActive] = useState(false);
 
   useEffect(() => {
     if (contactForm.message.trim() === "") {
@@ -60,9 +61,7 @@ const Contact = () => {
       contactForm.email.trim().includes(".")
     ) {
       sendEmail();
-      setLoaderActive("active");
-      setTimeout(() => setCheckActive("active"), 1800);
-      setContactForm(initialState);
+      setLoaderActive(true);
     } else {
       setError("Please enter a valid email address");
     }
@@ -79,14 +78,27 @@ const Contact = () => {
       .then(
         (result) => {
           // console.log(result.text);
+          setTimeout(() => setCheckActive(true), 1800);
+          setContactForm(initialState);
         },
         (error) => {
           // console.log(error.text);
+          setLoaderActive(false);
+          if (!trollMsgActive) {
+            setError(
+              `Oops, the email failed to send. I'd say please try again but that probably won't work`
+            );
+            setTrollMsgActive(true);
+          } else {
+            setError(
+              `Insanity is doing the same thing over and over and expecting different results. - Albert Einstein`
+            );
+          }
         }
       );
   };
   return (
-    <section id="contact">
+    <section ref={contactRef} id="contact">
       <p className="title">Contact</p>
       <div className="header-bar contact-div" />
       <p style={{ fontWeight: "bold", color: "#257cb6" }}>
@@ -114,14 +126,14 @@ const Contact = () => {
           value={contactForm.message}
           onChange={handleChange}
         />
-        {!checkActive && (
+        {!loaderActive && (
           <div className="submit-wrap">
             <p className="error-message">{error}</p>
             <input disabled={disabled} type="submit" value="Send" />
           </div>
         )}
-        <div className={`loader ${loaderActive}`}>
-          <div className={`check ${checkActive}`}>
+        <div className={`loader ${loaderActive ? "active" : ""}`}>
+          <div className={`check ${checkActive ? "active" : ""}`}>
             <span className="check-one"></span>
             <span className="check-two"></span>
           </div>
