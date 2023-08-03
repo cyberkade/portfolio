@@ -17,6 +17,14 @@ const Contact = ({ contactRef }) => {
   const [contactForm, setContactForm] = useState(initialState);
   const [trollMsgActive, setTrollMsgActive] = useState(false);
 
+  // useEffect(() => {
+  //   const hasSent = localStorage.getItem("email_sent");
+  //   if (hasSent) {
+  //     setCheckActive(true);
+  //     setLoaderActive(true);
+  //   }
+  // }, []);
+
   useEffect(() => {
     if (contactForm.message.trim() === "") {
       setDisabled(true);
@@ -80,6 +88,7 @@ const Contact = ({ contactRef }) => {
           // console.log(result.text);
           setTimeout(() => setCheckActive(true), 1800);
           setContactForm(initialState);
+          // localStorage.setItem("email_sent", true);
         },
         (error) => {
           // console.log(error.text);
